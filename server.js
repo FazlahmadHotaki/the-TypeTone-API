@@ -6,838 +6,1150 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ==================== PASHTO TYPING LESSONS ====================
+/*
+====================================================
+PASHTO TYPING LEARNING API
+====================================================
 
-const pashtoLessons = [
-  // ========== LEVEL 1: HOME ROW KEYS (Lessons 1-10) ==========
+Levels:
+
+1  - Keyboard Introduction
+2  - Basic Letters
+3  - Keyboard Rows
+4  - Letter Combinations
+5  - Simple Words
+6  - Special Pashto Letters
+7  - Numbers & Symbols
+8  - Common Phrases
+9  - Sentences
+10 - Paragraphs
+11 - Speed Practice
+12 - Random Practice
+====================================================
+*/
+
+
+// ==================================================
+// 1. PASHTO KEYBOARD
+// ==================================================
+
+const pashtoKeyboard = {
+
+  // Number row
+  numbers: [
+    { key: "1", letter: "۱" },
+    { key: "2", letter: "۲" },
+    { key: "3", letter: "۳" },
+    { key: "4", letter: "۴" },
+    { key: "5", letter: "۵" },
+    { key: "6", letter: "۶" },
+    { key: "7", letter: "۷" },
+    { key: "8", letter: "۸" },
+    { key: "9", letter: "۹" },
+    { key: "0", letter: "۰" }
+  ],
+
+  // Top row
+  topRow: [
+    { key: "Q", letter: "ض" },
+    { key: "W", letter: "ص" },
+    { key: "E", letter: "ث" },
+    { key: "R", letter: "ق" },
+    { key: "T", letter: "ف" },
+    { key: "Y", letter: "غ" },
+    { key: "U", letter: "ع" },
+    { key: "I", letter: "ه" },
+    { key: "O", letter: "خ" },
+    { key: "P", letter: "ح" },
+    { key: "[", letter: "ج" },
+    { key: "]", letter: "چ" }
+  ],
+
+  // Home row
+  homeRow: [
+    { key: "A", letter: "ش" },
+    { key: "S", letter: "س" },
+    { key: "D", letter: "ی" },
+    { key: "F", letter: "ب" },
+    { key: "G", letter: "ل" },
+    { key: "H", letter: "ا" },
+    { key: "J", letter: "ت" },
+    { key: "K", letter: "ن" },
+    { key: "L", letter: "م" },
+    { key: ";", letter: "ک" },
+    { key: "'", letter: "ګ" }
+  ],
+
+  // Bottom row
+  bottomRow: [
+    { key: "Z", letter: "ظ" },
+    { key: "X", letter: "ط" },
+    { key: "C", letter: "ز" },
+    { key: "V", letter: "ر" },
+    { key: "B", letter: "ذ" },
+    { key: "N", letter: "د" },
+    { key: "M", letter: "پ" },
+    { key: ",", letter: "و" },
+    { key: ".", letter: "ړ" },
+    { key: "/", letter: "ې" }
+  ],
+
+  specialLetters: [
+    "ټ",
+    "ډ",
+    "ړ",
+    "ڼ",
+    "ږ",
+    "ښ",
+    "ګ",
+    "ځ",
+    "څ",
+    "ې",
+    "ۍ",
+    "ئ"
+  ]
+};
+
+
+// ==================================================
+// 2. ALL PASHTO LETTERS
+// ==================================================
+
+const pashtoLetters = [
+  "ا",
+  "ب",
+  "پ",
+  "ت",
+  "ټ",
+  "ث",
+  "ج",
+  "ځ",
+  "چ",
+  "څ",
+  "ح",
+  "خ",
+  "د",
+  "ډ",
+  "ذ",
+  "ر",
+  "ړ",
+  "ز",
+  "ژ",
+  "ږ",
+  "س",
+  "ش",
+  "ښ",
+  "ص",
+  "ض",
+  "ط",
+  "ظ",
+  "ع",
+  "غ",
+  "ف",
+  "ق",
+  "ک",
+  "ګ",
+  "ل",
+  "م",
+  "ن",
+  "ڼ",
+  "و",
+  "ه",
+  "ی",
+  "ې",
+  "ۍ",
+  "ئ"
+];
+
+
+// ==================================================
+// 3. LESSONS
+// ==================================================
+
+const lessons = [
+
+  // ==================================================
+  // LEVEL 1 - KEYBOARD INTRODUCTION
+  // ==================================================
+
   {
     id: 1,
-    level: "Beginner",
-    title: "Home Row - ا and ت",
-    text: "ا ت ا ت ا ت ا ت ا ت",
-    description: "Practice home row keys: ا (Alif) and ت (Te)"
+    level: 1,
+    levelName: "پېژندنه",
+    type: "keyboard",
+    title: "د پښتو کیبورډ پېژندنه",
+    text: "پښتو کیبورډ",
+    description: "د پښتو کیبورډ تڼۍ وپېژنئ.",
+    difficulty: "easy"
   },
+
   {
     id: 2,
-    level: "Beginner",
-    title: "Home Row - ا and ن",
-    text: "ا ن ا ن ا ن ا ن ا ن",
-    description: "Practice home row keys: ا (Alif) and ن (Noon)"
+    level: 1,
+    levelName: "پېژندنه",
+    type: "keyboard",
+    title: "الف او د هغه تڼۍ",
+    text: "ا ا ا ا ا ا ا ا",
+    key: "H",
+    letter: "ا",
+    description: "د الف توري تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 3,
-    level: "Beginner",
-    title: "Home Row - ا، ت، ن",
-    text: "ا ت ن ا ت ن ا ت ن ا ت ن",
-    description: "Practice three home row keys together"
+    level: 1,
+    levelName: "پېژندنه",
+    type: "keyboard",
+    title: "ت او د هغه تڼۍ",
+    text: "ت ت ت ت ت ت ت ت",
+    key: "J",
+    letter: "ت",
+    description: "د ت توري تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 4,
-    level: "Beginner",
-    title: "Home Row - م and ک",
-    text: "م ک م ک م ک م ک م ک",
-    description: "Practice home row keys: م (Meem) and ک (Kaf)"
+    level: 1,
+    levelName: "پېژندنه",
+    type: "keyboard",
+    title: "ن او د هغه تڼۍ",
+    text: "ن ن ن ن ن ن ن ن",
+    key: "K",
+    letter: "ن",
+    description: "د ن توري تمرین.",
+    difficulty: "easy"
   },
+
+
+  // ==================================================
+  // LEVEL 2 - BASIC LETTERS
+  // ==================================================
+
   {
     id: 5,
-    level: "Beginner",
-    title: "Home Row - ا، ت، ن، م، ک",
-    text: "ا ت ن م ک ا ت ن م ک ا ت ن م ک",
-    description: "Practice all home row keys together"
+    level: 2,
+    levelName: "اساسي توري",
+    type: "letters",
+    title: "ا او ت",
+    text: "ا ت ا ت ا ت ا ت ا ت",
+    letters: ["ا", "ت"],
+    description: "د ا او ت تورو تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 6,
-    level: "Beginner",
-    title: "Home Row - ی and ه",
-    text: "ی ه ی ه ی ه ی ه ی ه",
-    description: "Practice home row keys: ی (Ye) and ه (He)"
+    level: 2,
+    levelName: "اساسي توري",
+    type: "letters",
+    title: "ا او ن",
+    text: "ا ن ا ن ا ن ا ن ا ن",
+    letters: ["ا", "ن"],
+    description: "د ا او ن تورو تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 7,
-    level: "Beginner",
-    title: "Home Row Complete",
-    text: "ا ت ن م ک ی ه ا ت ن م ک ی ه",
-    description: "Practice complete home row keys"
+    level: 2,
+    levelName: "اساسي توري",
+    type: "letters",
+    title: "م او ک",
+    text: "م ک م ک م ک م ک م ک",
+    letters: ["م", "ک"],
+    description: "د م او ک تورو تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 8,
-    level: "Beginner",
-    title: "Home Row - و and ر",
-    text: "و ر و ر و ر و ر و ر",
-    description: "Practice home row keys: و (Waw) and ر (Re)"
+    level: 2,
+    levelName: "اساسي توري",
+    type: "letters",
+    title: "ی او ه",
+    text: "ی ه ی ه ی ه ی ه ی ه",
+    letters: ["ی", "ه"],
+    description: "د ی او ه تورو تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 9,
-    level: "Beginner",
-    title: "Home Row - د and ل",
-    text: "د ل د ل د ل د ل د ل",
-    description: "Practice home row keys: د (Dal) and ل (Lam)"
+    level: 2,
+    levelName: "اساسي توري",
+    type: "letters",
+    title: "و او ر",
+    text: "و ر و ر و ر و ر و ر",
+    letters: ["و", "ر"],
+    description: "د و او ر تورو تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 10,
-    level: "Beginner",
-    title: "Home Row Mastery",
-    text: "ا ت ن م ک ی ه و ر د ل",
-    description: "Master all home row keys"
+    level: 2,
+    levelName: "اساسي توري",
+    type: "letters",
+    title: "د او ل",
+    text: "د ل د ل د ل د ل د ل",
+    letters: ["د", "ل"],
+    description: "د د او ل تورو تمرین.",
+    difficulty: "easy"
   },
 
-  // ========== LEVEL 2: TOP ROW KEYS (Lessons 11-20) ==========
+
+  // ==================================================
+  // LEVEL 3 - KEYBOARD ROWS
+  // ==================================================
+
   {
     id: 11,
-    level: "Beginner",
-    title: "Top Row - ب and س",
-    text: "ب س ب س ب س ب س ب س",
-    description: "Practice top row keys: ب (Be) and س (Seen)"
+    level: 3,
+    levelName: "کیبورډ قطارونه",
+    type: "row",
+    title: "Home Row",
+    text: "ا ت ن م ک ی ه و ر د ل",
+    row: "home",
+    description: "د Home Row تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 12,
-    level: "Beginner",
-    title: "Top Row - ش and پ",
-    text: "ش پ ش پ ش پ ش پ ش پ",
-    description: "Practice top row keys: ش (Sheen) and پ (Pe)"
+    level: 3,
+    levelName: "کیبورډ قطارونه",
+    type: "row",
+    title: "Top Row",
+    text: "ب س ش پ ج چ ح خ ع غ ف ق",
+    row: "top",
+    description: "د Top Row تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 13,
-    level: "Beginner",
-    title: "Top Row - ب، س، ش، پ",
-    text: "ب س ش پ ب س ش پ ب س ش پ",
-    description: "Practice four top row keys"
+    level: 3,
+    levelName: "کیبورډ قطارونه",
+    type: "row",
+    title: "Bottom Row",
+    text: "ز ژ ځ څ ډ ړ ټ ڼ ږ ښ ګ ې ۍ ئ",
+    row: "bottom",
+    description: "د ځانګړو تورو تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 14,
-    level: "Beginner",
-    title: "Top Row - ج and چ",
-    text: "ج چ ج چ ج چ ج چ ج چ",
-    description: "Practice top row keys: ج (Jeem) and چ (Che)"
+    level: 3,
+    levelName: "کیبورډ قطارونه",
+    type: "row",
+    title: "ټول توري",
+    text: pashtoLetters.join(" "),
+    row: "all",
+    description: "د پښتو ټول توري تمرین.",
+    difficulty: "medium"
   },
+
+
+  // ==================================================
+  // LEVEL 4 - LETTER COMBINATIONS
+  // ==================================================
+
   {
     id: 15,
-    level: "Beginner",
-    title: "Top Row - ح and خ",
-    text: "ح خ ح خ ح خ ح خ ح خ",
-    description: "Practice top row keys: ح (He) and خ (Khe)"
+    level: 4,
+    levelName: "د تورو ترکیب",
+    type: "combination",
+    title: "دوه توري",
+    text: "اب اب با با ات ات تا تا",
+    description: "د دوو تورو ترکیبونه تمرین کړئ.",
+    difficulty: "easy"
   },
+
   {
     id: 16,
-    level: "Beginner",
-    title: "Top Row Complete",
-    text: "ب س ش پ ج چ ح خ ع غ",
-    description: "Practice complete top row keys"
+    level: 4,
+    levelName: "د تورو ترکیب",
+    type: "combination",
+    title: "درې توري",
+    text: "انا باب تاب نان مات",
+    description: "د درې تورو ترکیبونه تمرین کړئ.",
+    difficulty: "easy"
   },
+
   {
     id: 17,
-    level: "Beginner",
-    title: "Top Row - ف and ق",
-    text: "ف ق ف ق ف ق ف ق ف ق",
-    description: "Practice top row keys: ف (Fe) and ق (Qaf)"
+    level: 4,
+    levelName: "د تورو ترکیب",
+    type: "combination",
+    title: "څلور توري",
+    text: "کتاب کورم مورم پلار",
+    description: "د څلورو تورو ترکیبونه تمرین کړئ.",
+    difficulty: "medium"
   },
+
+
+  // ==================================================
+  // LEVEL 5 - SIMPLE WORDS
+  // ==================================================
+
   {
     id: 18,
-    level: "Beginner",
-    title: "Top Row - ث and ص",
-    text: "ث ص ث ص ث ص ث ص ث ص",
-    description: "Practice top row keys: ث (Se) and ص (Swad)"
+    level: 5,
+    levelName: "ساده کلمې",
+    type: "word",
+    title: "اوبه",
+    text: "اوبه اوبه اوبه اوبه",
+    word: "اوبه",
+    translation: "Water",
+    description: "د اوبه کلمې تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 19,
-    level: "Beginner",
-    title: "Top Row - ض and ط",
-    text: "ض ط ض ط ض ط ض ط ض ط",
-    description: "Practice top row keys: ض (Dwad) and ط (Toe)"
+    level: 5,
+    levelName: "ساده کلمې",
+    type: "word",
+    title: "کور",
+    text: "کور کور کور کور",
+    word: "کور",
+    translation: "House",
+    description: "د کور کلمې تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 20,
-    level: "Beginner",
-    title: "Top Row Mastery",
-    text: "ب س ش پ ج چ ح خ ع غ ف ق ث ص ض ط",
-    description: "Master all top row keys"
+    level: 5,
+    levelName: "ساده کلمې",
+    type: "word",
+    title: "مور",
+    text: "مور مور مور مور",
+    word: "مور",
+    translation: "Mother",
+    description: "د مور کلمې تمرین.",
+    difficulty: "easy"
   },
 
-  // ========== LEVEL 3: BOTTOM ROW KEYS (Lessons 21-30) ==========
   {
     id: 21,
-    level: "Intermediate",
-    title: "Bottom Row - ز and ظ",
-    text: "ز ظ ز ظ ز ظ ز ظ ز ظ",
-    description: "Practice bottom row keys: ز (Ze) and ظ (Zoe)"
+    level: 5,
+    levelName: "ساده کلمې",
+    type: "word",
+    title: "پلار",
+    text: "پلار پلار پلار پلار",
+    word: "پلار",
+    translation: "Father",
+    description: "د پلار کلمې تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 22,
-    level: "Intermediate",
-    title: "Bottom Row - ژ and ذ",
-    text: "ژ ذ ژ ذ ژ ذ ژ ذ ژ ذ",
-    description: "Practice bottom row keys: ژ (Zhe) and ذ (Zal)"
+    level: 5,
+    levelName: "ساده کلمې",
+    type: "word",
+    title: "کتاب",
+    text: "کتاب کتاب کتاب کتاب",
+    word: "کتاب",
+    translation: "Book",
+    description: "د کتاب کلمې تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 23,
-    level: "Intermediate",
-    title: "Bottom Row - ځ and څ",
-    text: "ځ څ ځ څ ځ څ ځ څ ځ څ",
-    description: "Practice bottom row keys: ځ (Dze) and څ (Tse)"
+    level: 5,
+    levelName: "ساده کلمې",
+    type: "word",
+    title: "قلم",
+    text: "قلم قلم قلم قلم",
+    word: "قلم",
+    translation: "Pen",
+    description: "د قلم کلمې تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 24,
-    level: "Intermediate",
-    title: "Bottom Row - ډ and ړ",
-    text: "ډ ړ ډ ړ ډ ړ ډ ړ ډ ړ",
-    description: "Practice bottom row keys: ډ (Ddal) and ړ (Rre)"
+    level: 5,
+    levelName: "ساده کلمې",
+    type: "word",
+    title: "ملګری",
+    text: "ملګری ملګری ملګری",
+    word: "ملګری",
+    translation: "Friend",
+    description: "د ملګري کلمې تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 25,
-    level: "Intermediate",
-    title: "Bottom Row - ټ and ڼ",
-    text: "ټ ڼ ټ ڼ ټ ڼ ټ ڼ ټ ڼ",
-    description: "Practice bottom row keys: ټ (Tte) and ڼ (Nnna)"
+    level: 5,
+    levelName: "ساده کلمې",
+    type: "word",
+    title: "ښوونځی",
+    text: "ښوونځی ښوونځی ښوونځی",
+    word: "ښوونځی",
+    translation: "School",
+    description: "د ښوونځي کلمې تمرین.",
+    difficulty: "medium"
   },
+
+
+  // ==================================================
+  // LEVEL 6 - SPECIAL PASHTO LETTERS
+  // ==================================================
+
   {
     id: 26,
-    level: "Intermediate",
-    title: "Bottom Row - ږ and ښ",
-    text: "ږ ښ ږ ښ ږ ښ ږ ښ ږ ښ",
-    description: "Practice bottom row keys: ږ (Gee) and ښ (Xeen)"
+    level: 6,
+    levelName: "ځانګړي پښتو توري",
+    type: "special-letter",
+    title: "ټ",
+    text: "ټ ټ ټ ټ ټ ټ ټ ټ",
+    letter: "ټ",
+    description: "د ټ توري تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 27,
-    level: "Intermediate",
-    title: "Bottom Row - ګ and ې",
-    text: "ګ ې ګ ې ګ ې ګ ې ګ ې",
-    description: "Practice bottom row keys: ګ (Gaf) and ې (Ye)"
+    level: 6,
+    levelName: "ځانګړي پښتو توري",
+    type: "special-letter",
+    title: "ډ",
+    text: "ډ ډ ډ ډ ډ ډ ډ ډ",
+    letter: "ډ",
+    description: "د ډ توري تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 28,
-    level: "Intermediate",
-    title: "Bottom Row - ۍ and ئ",
-    text: "ۍ ئ ۍ ئ ۍ ئ ۍ ئ ۍ ئ",
-    description: "Practice bottom row keys: ۍ and ئ"
+    level: 6,
+    levelName: "ځانګړي پښتو توري",
+    type: "special-letter",
+    title: "ړ",
+    text: "ړ ړ ړ ړ ړ ړ ړ ړ",
+    letter: "ړ",
+    description: "د ړ توري تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 29,
-    level: "Intermediate",
-    title: "Bottom Row Complete",
-    text: "ز ظ ژ ذ ځ څ ډ ړ ټ ڼ ږ ښ ګ ې ۍ ئ",
-    description: "Practice complete bottom row keys"
+    level: 6,
+    levelName: "ځانګړي پښتو توري",
+    type: "special-letter",
+    title: "ڼ",
+    text: "ڼ ڼ ڼ ڼ ڼ ڼ ڼ ڼ",
+    letter: "ڼ",
+    description: "د ڼ توري تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 30,
-    level: "Intermediate",
-    title: "All Rows Combined",
-    text: "ا ب پ ت ټ ث ج ځ چ څ ح خ د ډ ذ ر ړ ز ژ ږ س ش ښ ص ض ط ظ ع غ ف ق ک ګ ل م ن ڼ و ه ی ې ۍ ئ",
-    description: "Practice all Pashto letters"
+    level: 6,
+    levelName: "ځانګړي پښتو توري",
+    type: "special-letter",
+    title: "ږ",
+    text: "ږ ږ ږ ږ ږ ږ ږ ږ",
+    letter: "ږ",
+    description: "د ږ توري تمرین.",
+    difficulty: "medium"
   },
 
-  // ========== LEVEL 4: SIMPLE WORDS (Lessons 31-50) ==========
   {
     id: 31,
-    level: "Intermediate",
-    title: "Simple Words - 1",
-    text: "اوبه اوبه اوبه اوبه",
-    description: "Type the word 'اوبه' (water)"
+    level: 6,
+    levelName: "ځانګړي پښتو توري",
+    type: "special-letter",
+    title: "ښ",
+    text: "ښ ښ ښ ښ ښ ښ ښ ښ",
+    letter: "ښ",
+    description: "د ښ توري تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 32,
-    level: "Intermediate",
-    title: "Simple Words - 2",
-    text: "کور کور کور کور",
-    description: "Type the word 'کور' (house)"
+    level: 6,
+    levelName: "ځانګړي پښتو توري",
+    type: "special-letter",
+    title: "ګ",
+    text: "ګ ګ ګ ګ ګ ګ ګ ګ",
+    letter: "ګ",
+    description: "د ګ توري تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 33,
-    level: "Intermediate",
-    title: "Simple Words - 3",
-    text: "لمر لمر لمر لمر",
-    description: "Type the word 'لمر' (sun)"
+    level: 6,
+    levelName: "ځانګړي پښتو توري",
+    type: "special-letter",
+    title: "ځ او څ",
+    text: "ځ څ ځ څ ځ څ ځ څ",
+    letter: "ځ څ",
+    description: "د ځ او څ تورو تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 34,
-    level: "Intermediate",
-    title: "Simple Words - 4",
-    text: "مور مور مور مور",
-    description: "Type the word 'مور' (mother)"
+    level: 6,
+    levelName: "ځانګړي پښتو توري",
+    type: "special-letter",
+    title: "ې، ۍ او ئ",
+    text: "ې ۍ ئ ې ۍ ئ ې ۍ ئ",
+    letter: "ې ۍ ئ",
+    description: "د پای ځانګړو تورو تمرین.",
+    difficulty: "hard"
   },
+
+
+  // ==================================================
+  // LEVEL 7 - NUMBERS AND SYMBOLS
+  // ==================================================
+
   {
     id: 35,
-    level: "Intermediate",
-    title: "Simple Words - 5",
-    text: "پلار پلار پلار پلار",
-    description: "Type the word 'پلار' (father)"
+    level: 7,
+    levelName: "شمېرې",
+    type: "numbers",
+    title: "پښتو شمېرې",
+    text: "۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰",
+    description: "د پښتو شمیرو تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 36,
-    level: "Intermediate",
-    title: "Simple Words - 6",
-    text: "کتاب کتاب کتاب کتاب",
-    description: "Type the word 'کتاب' (book)"
+    level: 7,
+    levelName: "نښې",
+    type: "symbols",
+    title: "د لیک نښې",
+    text: "، . ؟ ! : ؛",
+    description: "د لیک نښو تمرین.",
+    difficulty: "medium"
   },
+
+
+  // ==================================================
+  // LEVEL 8 - COMMON PHRASES
+  // ==================================================
+
   {
     id: 37,
-    level: "Intermediate",
-    title: "Simple Words - 7",
-    text: "قلم قلم قلم قلم",
-    description: "Type the word 'قلم' (pen)"
+    level: 8,
+    levelName: "عام عبارتونه",
+    type: "phrase",
+    title: "سلام",
+    text: "سلام سلام سلام سلام",
+    description: "د سلام کلمې تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 38,
-    level: "Intermediate",
-    title: "Simple Words - 8",
-    text: "دستار دستار دستار دستار",
-    description: "Type the word 'دستار' (turban)"
+    level: 8,
+    levelName: "عام عبارتونه",
+    type: "phrase",
+    title: "مننه",
+    text: "مننه مننه مننه مننه",
+    description: "د مننې کلمې تمرین.",
+    difficulty: "easy"
   },
+
   {
     id: 39,
-    level: "Intermediate",
-    title: "Simple Words - 9",
-    text: "ملګری ملګری ملګری ملګری",
-    description: "Type the word 'ملګری' (friend)"
+    level: 8,
+    levelName: "عام عبارتونه",
+    type: "phrase",
+    title: "ښه راغلاست",
+    text: "ښه راغلاست ښه راغلاست",
+    description: "د ښه راغلاست عبارت تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 40,
-    level: "Intermediate",
-    title: "Simple Words - 10",
-    text: "ښوونځی ښوونځی ښوونځی ښوونځی",
-    description: "Type the word 'ښوونځی' (school)"
+    level: 8,
+    levelName: "عام عبارتونه",
+    type: "phrase",
+    title: "زه ښه یم",
+    text: "زه ښه یم زه ښه یم",
+    description: "د عبارت تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 41,
-    level: "Intermediate",
-    title: "Numbers - 1",
-    text: "۱ ۲ ۳ ۴ ۵ ۶ ۷ ۸ ۹ ۰",
-    description: "Practice Pashto numbers"
+    level: 8,
+    levelName: "عام عبارتونه",
+    type: "phrase",
+    title: "ته څنګه یې؟",
+    text: "ته څنګه یې؟ ته څنګه یې؟",
+    description: "د پوښتنې عبارت تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 42,
-    level: "Intermediate",
-    title: "Simple Words - 11",
-    text: "ډوډۍ ډوډۍ ډوډۍ ډوډۍ",
-    description: "Type the word 'ډوډۍ' (bread)"
+    level: 8,
+    levelName: "عام عبارتونه",
+    type: "phrase",
+    title: "زه پښتو زده کوم",
+    text: "زه پښتو زده کوم زه پښتو زده کوم",
+    description: "د پښتو زده کړې عبارت تمرین.",
+    difficulty: "medium"
   },
+
+
+  // ==================================================
+  // LEVEL 9 - SENTENCES
+  // ==================================================
+
   {
     id: 43,
-    level: "Intermediate",
-    title: "Simple Words - 12",
-    text: "اوبه څښل اوبه څښل اوبه څښل",
-    description: "Type the phrase 'اوبه څښل' (drinking water)"
+    level: 9,
+    levelName: "جملې",
+    type: "sentence",
+    title: "لومړۍ جمله",
+    text: "زه کتاب لولم.",
+    description: "د ساده جملې ټایپ تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 44,
-    level: "Intermediate",
-    title: "Simple Words - 13",
-    text: "ښه راغلاست ښه راغلاست ښه راغلاست",
-    description: "Type the phrase 'ښه راغلاست' (welcome)"
+    level: 9,
+    levelName: "جملې",
+    type: "sentence",
+    title: "دوهمه جمله",
+    text: "هغه ښوونځي ته ځي.",
+    description: "د جملې ټایپ تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 45,
-    level: "Intermediate",
-    title: "Simple Words - 14",
-    text: "مننه مننه مننه مننه",
-    description: "Type the word 'مننه' (thank you)"
+    level: 9,
+    levelName: "جملې",
+    type: "sentence",
+    title: "درېیمه جمله",
+    text: "موږ کور ته ځو.",
+    description: "د جملې ټایپ تمرین.",
+    difficulty: "medium"
   },
+
   {
     id: 46,
-    level: "Intermediate",
-    title: "Simple Words - 15",
-    text: "سلام سلام سلام سلام",
-    description: "Type the word 'سلام' (hello)"
+    level: 9,
+    levelName: "جملې",
+    type: "sentence",
+    title: "څلورمه جمله",
+    text: "زه غواړم پښتو زده کړم.",
+    description: "د جملې ټایپ تمرین.",
+    difficulty: "hard"
   },
+
   {
     id: 47,
-    level: "Intermediate",
-    title: "Simple Words - 16",
-    text: "ورور ورور ورور ورور",
-    description: "Type the word 'ورور' (brother)"
+    level: 9,
+    levelName: "جملې",
+    type: "sentence",
+    title: "پنځمه جمله",
+    text: "ته باید ډیر تمرین وکړې.",
+    description: "د ټایپ تمرین اهمیت.",
+    difficulty: "hard"
   },
+
   {
     id: 48,
-    level: "Intermediate",
-    title: "Simple Words - 17",
-    text: "خور خور خور خور",
-    description: "Type the word 'خور' (sister)"
+    level: 9,
+    levelName: "جملې",
+    type: "sentence",
+    title: "شپږمه جمله",
+    text: "پښتو زموږ ملي ژبه ده.",
+    description: "د پښتو په اړه جمله.",
+    difficulty: "hard"
   },
+
+
+  // ==================================================
+  // LEVEL 10 - PARAGRAPHS
+  // ==================================================
+
   {
     id: 49,
-    level: "Intermediate",
-    title: "Simple Words - 18",
-    text: "ګل ګل ګل ګل",
-    description: "Type the word 'ګل' (flower)"
+    level: 10,
+    levelName: "Paragraph",
+    type: "paragraph",
+    title: "زده کړه",
+    text:
+      "تعلیم د انسان لپاره ډیر مهم دی. یو تعلیم یافته انسان کولای شي چې خپل هیواد ته خدمت وکړي.",
+    description: "د تعلیم په اړه اوږد متن.",
+    difficulty: "hard"
   },
+
   {
     id: 50,
-    level: "Intermediate",
-    title: "Simple Words - 19",
-    text: "باغ باغ باغ باغ",
-    description: "Type the word 'باغ' (garden)"
+    level: 10,
+    levelName: "Paragraph",
+    type: "paragraph",
+    title: "پښتو ژبه",
+    text:
+      "پښتو ژبه د نړۍ یوه له لرغونو ژبو څخه ده. میلیونونه خلک په دې ژبه خبرې کوي.",
+    description: "د پښتو ژبې په اړه متن.",
+    difficulty: "hard"
   },
 
-  // ========== LEVEL 5: COMMON PHRASES (Lessons 51-70) ==========
   {
     id: 51,
-    level: "Advanced",
-    title: "Common Phrases - 1",
-    text: "ته څنګه یې؟ ته څنګه یې؟ ته څنګه یې؟",
-    description: "Type 'ته څنګه یې؟' (How are you?)"
-  },
-  {
-    id: 52,
-    level: "Advanced",
-    title: "Common Phrases - 2",
-    text: "زه ښه یم زه ښه یم زه ښه یم",
-    description: "Type 'زه ښه یم' (I am fine)"
-  },
-  {
-    id: 53,
-    level: "Advanced",
-    title: "Common Phrases - 3",
-    text: "ستا نوم څه دی؟ ستا نوم څه دی؟",
-    description: "Type 'ستا نوم څه دی؟' (What is your name?)"
-  },
-  {
-    id: 54,
-    level: "Advanced",
-    title: "Common Phrases - 4",
-    text: "زما نوم دی زما نوم دی زما نوم دی",
-    description: "Type 'زما نوم دی' (My name is...)"
-  },
-  {
-    id: 55,
-    level: "Advanced",
-    title: "Common Phrases - 5",
-    text: "ته له کومه یې؟ ته له کومه یې؟",
-    description: "Type 'ته له کومه یې؟' (Where are you from?)"
-  },
-  {
-    id: 56,
-    level: "Advanced",
-    title: "Common Phrases - 6",
-    text: "زه له کابله یم زه له کابله یم",
-    description: "Type 'زه له کابله یم' (I am from Kabul)"
-  },
-  {
-    id: 57,
-    level: "Advanced",
-    title: "Common Phrases - 7",
-    text: "خدای پامان خدای پامان خدای پامان",
-    description: "Type 'خدای پامان' (Goodbye)"
-  },
-  {
-    id: 58,
-    level: "Advanced",
-    title: "Common Phrases - 8",
-    text: "سبا به سره وینو سبا به سره وینو",
-    description: "Type 'سبا به سره وینو' (See you tomorrow)"
-  },
-  {
-    id: 59,
-    level: "Advanced",
-    title: "Common Phrases - 9",
-    text: "مېلمستیا ته ښه راغلاست",
-    description: "Type 'مېلمستیا ته ښه راغلاست' (Welcome to the party)"
-  },
-  {
-    id: 60,
-    level: "Advanced",
-    title: "Common Phrases - 10",
-    text: "زه تا سره مینه لرم",
-    description: "Type 'زه تا سره مینه لرم' (I love you)"
-  },
-  {
-    id: 61,
-    level: "Advanced",
-    title: "Common Phrases - 11",
-    text: "ماته مرسته وکړئ ماته مرسته وکړئ",
-    description: "Type 'ماته مرسته وکړئ' (Help me)"
-  },
-  {
-    id: 62,
-    level: "Advanced",
-    title: "Common Phrases - 12",
-    text: "دې څومره قیمت دی؟ دې څومره قیمت دی؟",
-    description: "Type 'دې څومره قیمت دی؟' (How much is this?)"
-  },
-  {
-    id: 63,
-    level: "Advanced",
-    title: "Common Phrases - 13",
-    text: "زه نه پوهیږم زه نه پوهیږم",
-    description: "Type 'زه نه پوهیږم' (I don't understand)"
-  },
-  {
-    id: 64,
-    level: "Advanced",
-    title: "Common Phrases - 14",
-    text: "په پښتو خبرې وکړئ په پښتو خبرې وکړئ",
-    description: "Type 'په پښتو خبرې وکړئ' (Speak in Pashto)"
-  },
-  {
-    id: 65,
-    level: "Advanced",
-    title: "Common Phrases - 15",
-    text: "زه پښتو زده کوم زه پښتو زده کوم",
-    description: "Type 'زه پښتو زده کوم' (I am learning Pashto)"
-  },
-  {
-    id: 66,
-    level: "Advanced",
-    title: "Days of Week",
-    text: "شنبه یکشنبه دوشنبه سه شنبه چهارشنبه پنجشنبه جمعه",
-    description: "Type the days of the week in Pashto"
-  },
-  {
-    id: 67,
-    level: "Advanced",
-    title: "Months - 1",
-    text: "وری غویی چنګاښ زمری وږی",
-    description: "Type first five months of Pashto calendar"
-  },
-  {
-    id: 68,
-    level: "Advanced",
-    title: "Months - 2",
-    text: "تله لړم لیندۍ مرغومی سلواغه کب",
-    description: "Type last six months of Pashto calendar"
-  },
-  {
-    id: 69,
-    level: "Advanced",
-    title: "Colors",
-    text: "سور شین تور سپین ژیړ نیلی",
-    description: "Type colors in Pashto: red, green, black, white, yellow, blue"
-  },
-  {
-    id: 70,
-    level: "Advanced",
-    title: "Family Members",
-    text: "مور پلار ورور خور نیکه انا",
-    description: "Type family members: mother, father, brother, sister, grandfather, grandmother"
+    level: 10,
+    levelName: "Paragraph",
+    type: "paragraph",
+    title: "افغانستان",
+    text:
+      "افغانستان یو ښکلی هیواد دی. په افغانستان کې ډېر تاریخي او طبیعي ځایونه شته.",
+    description: "د افغانستان په اړه متن.",
+    difficulty: "hard"
   },
 
-  // ========== LEVEL 6: SENTENCES (Lessons 71-100) ==========
   {
-    id: 71,
-    level: "Advanced",
-    title: "Sentences - 1",
-    text: "زه کتاب لولم زه کتاب لولم",
-    description: "Type 'زه کتاب لولم' (I read a book)"
-  },
-  {
-    id: 72,
-    level: "Advanced",
-    title: "Sentences - 2",
-    text: "هغه ښوونځي ته ځي هغه ښوونځي ته ځي",
-    description: "Type 'هغه ښوونځي ته ځي' (He goes to school)"
-  },
-  {
-    id: 73,
-    level: "Advanced",
-    title: "Sentences - 3",
-    text: "موږ کور ته ځو موږ کور ته ځو",
-    description: "Type 'موږ کور ته ځو' (We go home)"
-  },
-  {
-    id: 74,
-    level: "Advanced",
-    title: "Sentences - 4",
-    text: "دوی لوبې کوي دوی لوبې کوي",
-    description: "Type 'دوی لوبې کوي' (They play)"
-  },
-  {
-    id: 75,
-    level: "Advanced",
-    title: "Sentences - 5",
-    text: "زه چای څښم زه چای څښم",
-    description: "Type 'زه چای څښم' (I drink tea)"
-  },
-  {
-    id: 76,
-    level: "Advanced",
-    title: "Sentences - 6",
-    text: "هغه ډوډۍ خوري هغه ډوډۍ خوري",
-    description: "Type 'هغه ډوډۍ خوري' (She eats bread)"
-  },
-  {
-    id: 77,
-    level: "Advanced",
-    title: "Sentences - 7",
-    text: "لمر په اسمان کې دی",
-    description: "Type 'لمر په اسمان کې دی' (The sun is in the sky)"
-  },
-  {
-    id: 78,
-    level: "Advanced",
-    title: "Sentences - 8",
-    text: "سپوږمۍ په شپه کې ښکاري",
-    description: "Type 'سپوږمۍ په شپه کې ښکاري' (The moon appears at night)"
-  },
-  {
-    id: 79,
-    level: "Advanced",
-    title: "Sentences - 9",
-    text: "باران اوري باران اوري",
-    description: "Type 'باران اوري' (It is raining)"
-  },
-  {
-    id: 80,
-    level: "Advanced",
-    title: "Sentences - 10",
-    text: "واوره راوریږي واوره راوریږي",
-    description: "Type 'واوره راوریږي' (It is snowing)"
-  },
-  {
-    id: 81,
-    level: "Expert",
-    title: "Sentences - 11",
-    text: "زه غواړم پښتو زده کړم",
-    description: "Type 'زه غواړم پښتو زده کړم' (I want to learn Pashto)"
-  },
-  {
-    id: 82,
-    level: "Expert",
-    title: "Sentences - 12",
-    text: "ته باید ډیر تمرین وکړې",
-    description: "Type 'ته باید ډیر تمرین وکړې' (You should practice more)"
-  },
-  {
-    id: 83,
-    level: "Expert",
-    title: "Sentences - 13",
-    text: "افغانستان یو ښکلی هیواد دی",
-    description: "Type 'افغانستان یو ښکلی هیواد دی' (Afghanistan is a beautiful country)"
-  },
-  {
-    id: 84,
-    level: "Expert",
-    title: "Sentences - 14",
-    text: "پښتو زموږ ملي ژبه ده",
-    description: "Type 'پښتو زموږ ملي ژبه ده' (Pashto is our national language)"
-  },
-  {
-    id: 85,
-    level: "Expert",
-    title: "Sentences - 15",
-    text: "زه په کابل کې اوسیږم",
-    description: "Type 'زه په کابل کې اوسیږم' (I live in Kabul)"
-  },
-  {
-    id: 86,
-    level: "Expert",
-    title: "Sentences - 16",
-    text: "هغه په کندهار کې کار کوي",
-    description: "Type 'هغه په کندهار کې کار کوي' (He works in Kandahar)"
-  },
-  {
-    id: 87,
-    level: "Expert",
-    title: "Sentences - 17",
-    text: "موږ سبا بازار ته ځو",
-    description: "Type 'موږ سبا بازار ته ځو' (We go to the market tomorrow)"
-  },
-  {
-    id: 88,
-    level: "Expert",
-    title: "Sentences - 18",
-    text: "تاسو څه کوئ؟ تاسو څه کوئ؟",
-    description: "Type 'تاسو څه کوئ؟' (What are you doing?)"
-  },
-  {
-    id: 89,
-    level: "Expert",
-    title: "Sentences - 19",
-    text: "زه لیک لیکم زه لیک لیکم",
-    description: "Type 'زه لیک لیکم' (I am writing a letter)"
-  },
-  {
-    id: 90,
-    level: "Expert",
-    title: "Sentences - 20",
-    text: "هغه سندره وايي هغه سندره وايي",
-    description: "Type 'هغه سندره وايي' (She sings a song)"
-  },
-  {
-    id: 91,
-    level: "Expert",
-    title: "Paragraph - 1",
-    text: "زه هر سهار ژر پاڅیږم او خپل مخ وینځم. بیا زه ناشته کوم او ښوونځي ته ځم.",
-    description: "Type about morning routine"
-  },
-  {
-    id: 92,
-    level: "Expert",
-    title: "Paragraph - 2",
-    text: "زما کورنۍ لویه ده. زما مور، پلار، دوه وروڼه او یوه خور لرم.",
-    description: "Type about family"
-  },
-  {
-    id: 93,
-    level: "Expert",
-    title: "Paragraph - 3",
-    text: "پسرلی د کال تر ټولو ښکلی موسم دی. په دې موسم کې ګلان غوړیږي.",
-    description: "Type about spring season"
-  },
-  {
-    id: 94,
-    level: "Expert",
-    title: "Paragraph - 4",
-    text: "افغانستان ډیر تاریخي ځایونه لري. د بامیان بودا مجسمې ډیرې مشهورې وې.",
-    description: "Type about Afghanistan's history"
-  },
-  {
-    id: 95,
-    level: "Expert",
-    title: "Paragraph - 5",
-    text: "پښتو ژبه د نړۍ یوه له لرغونو ژبو څخه ده. میلیونونه خلک په دې ژبه خبرې کوي.",
-    description: "Type about Pashto language"
-  },
-  {
-    id: 96,
-    level: "Expert",
-    title: "Long Text - 1",
-    text: "تعلیم د انسان لپاره ډیر مهم دی. یو تعلیم یافته انسان کولای شي چې خپل هیواد ته خدمت وکړي.",
-    description: "Type about importance of education"
-  },
-  {
-    id: 97,
-    level: "Expert",
-    title: "Long Text - 2",
-    text: "صحت د انسان تر ټولو لویه شتمني ده. موږ باید خپل روغتیا ته پام وکړو او پاکه ژوند وکړو.",
-    description: "Type about health"
-  },
-  {
-    id: 98,
-    level: "Expert",
-    title: "Long Text - 3",
-    text: "کار او زیار د بریالیتوب کیلي ده. هر څوک چې زیار وکړي، بریالی به شي.",
-    description: "Type about hard work"
-  },
-  {
-    id: 99,
-    level: "Expert",
-    title: "Long Text - 4",
-    text: "مور او پلار زموږ تر ټولو ګران خلک دي. موږ باید د دوی خدمت وکړو او درناوی یې وکړو.",
-    description: "Type about respect for parents"
-  },
-  {
-    id: 100,
-    level: "Expert",
-    title: "Long Text - 5",
-    text: "سوله او امنیت د هر هیواد د پرمختګ لپاره اړین دي. موږ باید د سولې لپاره کار وکړو.",
-    description: "Type about peace and security"
-  },
-  {
-    id: 101,
-    level: "Expert",
-    title: "Long Text - 6",
-    text: "پښتني کلتور ډیر بډای دی. پښتانه د خپل میلمه پالنې له امله په ټوله نړۍ کې مشهور دي.",
-    description: "Type about Pashtun culture"
-  },
-  {
-    id: 102,
-    level: "Expert",
-    title: "Long Text - 7",
-    text: "اوبه د ژوند لپاره اړینې دي. موږ باید اوبه ضایع نه کړو او په سمه توګه ترې استفاده وکړو.",
-    description: "Type about water conservation"
-  },
-  {
-    id: 103,
-    level: "Expert",
-    title: "Long Text - 8",
-    text: "کرنه د افغانستان د اقتصاد مهمه برخه ده. ډیری خلک په کلیو کې په کرنه بوخت دي.",
-    description: "Type about agriculture"
-  },
-  {
-    id: 104,
-    level: "Expert",
-    title: "Long Text - 9",
-    text: "ښځې او نارینه دواړه د ټولنې مهم غړي دي. دواړه باید د زده کړې او کار مساوي حقونه ولري.",
-    description: "Type about equality"
-  },
-  {
-    id: 105,
-    level: "Expert",
-    title: "Long Text - 10",
-    text: "د راتلونکي لپاره موږ باید نن کار وکړو. هر څه چې نن وکرو، سبا به یې نتیجه ووینو.",
-    description: "Type about future planning"
+    id: 52,
+    level: 10,
+    levelName: "Paragraph",
+    type: "paragraph",
+    title: "کار او زیار",
+    text:
+      "کار او زیار د بریالیتوب کیلي ده. هر څوک چې زیار وکړي، بریالی به شي.",
+    description: "د هڅې او بریالیتوب په اړه متن.",
+    difficulty: "hard"
   }
 ];
 
-// ==================== API ENDPOINTS ====================
+
+// ==================================================
+// HOME
+// ==================================================
 
 app.get("/", (req, res) => {
+
   res.json({
-    message: "Pashto Typing Learning API is working!",
-    totalLessons: pashtoLessons.length,
+    success: true,
+    message: "د پښتو ټایپنګ زده کړې API فعاله ده.",
+    totalLessons: lessons.length,
+
     endpoints: {
-      allLessons: "/api/lessons",
-      lessonById: "/api/lessons/:id",
-      lessonsByLevel: "/api/lessons/level/:level"
+      keyboard: "/api/keyboard",
+      letters: "/api/letters",
+      lessons: "/api/lessons",
+      lesson: "/api/lessons/:id",
+      level: "/api/lessons/level/:level",
+      type: "/api/lessons/type/:type",
+      random: "/api/lessons/random",
+      stats: "/api/stats"
     }
   });
+
 });
 
-// Get all lessons
+
+// ==================================================
+// GET KEYBOARD
+// ==================================================
+
+app.get("/api/keyboard", (req, res) => {
+
+  res.json({
+    success: true,
+    keyboard: pashtoKeyboard
+  });
+
+});
+
+
+// ==================================================
+// GET ALL LETTERS
+// ==================================================
+
+app.get("/api/letters", (req, res) => {
+
+  const letters = pashtoLetters.map((letter, index) => {
+
+    let key = null;
+
+    Object.values(pashtoKeyboard).forEach(row => {
+
+      if (!Array.isArray(row)) return;
+
+      const found = row.find(item => item.letter === letter);
+
+      if (found) {
+        key = found.key;
+      }
+
+    });
+
+    return {
+      id: index + 1,
+      letter,
+      key
+    };
+
+  });
+
+  res.json({
+    success: true,
+    total: letters.length,
+    letters
+  });
+
+});
+
+
+// ==================================================
+// GET ALL LESSONS
+// ==================================================
+
 app.get("/api/lessons", (req, res) => {
-  res.json({
-    total: pashtoLessons.length,
-    lessons: pashtoLessons
-  });
-});
 
-// Get a single lesson by ID
-app.get("/api/lessons/:id", (req, res) => {
-  const id = parseInt(req.params.id);
-  const lesson = pashtoLessons.find(l => l.id === id);
-  
-  if (!lesson) {
-    return res.status(404).json({
-      error: "Lesson not found",
-      message: `No lesson found with ID ${id}`
-    });
-  }
-  
-  res.json(lesson);
-});
-
-// Get lessons by level
-app.get("/api/lessons/level/:level", (req, res) => {
-  const level = req.params.level.toLowerCase();
-  const lessons = pashtoLessons.filter(l => l.level.toLowerCase() === level);
-  
-  if (lessons.length === 0) {
-    return res.status(404).json({
-      error: "No lessons found",
-      message: `No lessons found for level: ${level}`
-    });
-  }
-  
   res.json({
-    level: level,
+    success: true,
     total: lessons.length,
-    lessons: lessons
+    lessons
   });
+
 });
 
-// Get lesson count by level
+
+// ==================================================
+// GET SINGLE LESSON
+// ==================================================
+
+app.get("/api/lessons/:id", (req, res) => {
+
+  const id = Number(req.params.id);
+
+  const lesson = lessons.find(item => item.id === id);
+
+  if (!lesson) {
+
+    return res.status(404).json({
+      success: false,
+      message: "درس پیدا نه شو."
+    });
+
+  }
+
+  res.json({
+    success: true,
+    lesson
+  });
+
+});
+
+
+// ==================================================
+// GET LESSONS BY LEVEL
+// ==================================================
+
+app.get("/api/lessons/level/:level", (req, res) => {
+
+  const level = Number(req.params.level);
+
+  const result = lessons.filter(
+    lesson => lesson.level === level
+  );
+
+  if (result.length === 0) {
+
+    return res.status(404).json({
+      success: false,
+      message: "په دې Level کې درسونه پیدا نه شول."
+    });
+
+  }
+
+  res.json({
+    success: true,
+    level,
+    total: result.length,
+    lessons: result
+  });
+
+});
+
+
+// ==================================================
+// GET LESSONS BY TYPE
+// ==================================================
+
+app.get("/api/lessons/type/:type", (req, res) => {
+
+  const type = req.params.type.toLowerCase();
+
+  const result = lessons.filter(
+    lesson => lesson.type.toLowerCase() === type
+  );
+
+  if (result.length === 0) {
+
+    return res.status(404).json({
+      success: false,
+      message: "د دې ډول درسونه پیدا نه شول."
+    });
+
+  }
+
+  res.json({
+    success: true,
+    type,
+    total: result.length,
+    lessons: result
+  });
+
+});
+
+
+// ==================================================
+// RANDOM LESSON
+// ==================================================
+
+app.get("/api/lessons/random", (req, res) => {
+
+  const randomIndex =
+    Math.floor(Math.random() * lessons.length);
+
+  const lesson = lessons[randomIndex];
+
+  res.json({
+    success: true,
+    lesson
+  });
+
+});
+
+
+// ==================================================
+// RANDOM LETTER
+// ==================================================
+
+app.get("/api/letters/random", (req, res) => {
+
+  const randomIndex =
+    Math.floor(Math.random() * pashtoLetters.length);
+
+  const letter = pashtoLetters[randomIndex];
+
+  res.json({
+    success: true,
+    letter
+  });
+
+});
+
+
+// ==================================================
+// STATISTICS
+// ==================================================
+
 app.get("/api/stats", (req, res) => {
-  const stats = {
-    totalLessons: pashtoLessons.length,
-    byLevel: {}
-  };
-  
-  pashtoLessons.forEach(lesson => {
-    if (!stats.byLevel[lesson.level]) {
-      stats.byLevel[lesson.level] = 0;
+
+  const stats = {};
+
+  lessons.forEach(lesson => {
+
+    const level = lesson.level;
+
+    if (!stats[level]) {
+      stats[level] = 0;
     }
-    stats.byLevel[lesson.level]++;
+
+    stats[level]++;
+
   });
-  
-  res.json(stats);
+
+  res.json({
+    success: true,
+    totalLessons: lessons.length,
+    levels: stats
+  });
+
 });
 
-const PORT = 5000;
+
+// ==================================================
+// SEARCH LESSONS
+// ==================================================
+
+app.get("/api/search", (req, res) => {
+
+  const query = req.query.q;
+
+  if (!query) {
+
+    return res.status(400).json({
+      success: false,
+      message: "q parameter ضروري دی."
+    });
+
+  }
+
+  const result = lessons.filter(lesson => {
+
+    const text =
+      `${lesson.title} ${lesson.text} ${lesson.description}`
+        .toLowerCase();
+
+    return text.includes(query.toLowerCase());
+
+  });
+
+  res.json({
+    success: true,
+    query,
+    total: result.length,
+    lessons: result
+  });
+
+});
+
+
+// ==================================================
+// START SERVER
+// ==================================================
+
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-  console.log(`Total Pashto typing lessons: ${pashtoLessons.length}`);
-  console.log(`Available endpoints:`);
-  console.log(`  - GET /api/lessons (all lessons)`);
-  console.log(`  - GET /api/lessons/:id (single lesson)`);
-  console.log(`  - GET /api/lessons/level/:level (lessons by level)`);
-  console.log(`  - GET /api/stats (lesson statistics)`);
+
+  console.log("");
+  console.log("======================================");
+  console.log("Pashto Typing API");
+  console.log("======================================");
+  console.log(`Server: http://localhost:${PORT}`);
+  console.log(`Lessons: ${lessons.length}`);
+  console.log("");
+  console.log("Endpoints:");
+  console.log(`/api/keyboard`);
+  console.log(`/api/letters`);
+  console.log(`/api/letters/random`);
+  console.log(`/api/lessons`);
+  console.log(`/api/lessons/:id`);
+  console.log(`/api/lessons/level/:level`);
+  console.log(`/api/lessons/type/:type`);
+  console.log(`/api/lessons/random`);
+  console.log(`/api/search?q=کتاب`);
+  console.log(`/api/stats`);
+  console.log("======================================");
+  console.log("");
+
 });
