@@ -88,14 +88,6 @@ const pashtoKeyboard = {
 // ======================================================
 // PASHTO LETTERS - 46
 // ======================================================
-//
-// 43 standard Pashto letters
-// + ي
-// + آ
-// + ء
-//
-// Total = 46
-// ======================================================
 
 const pashtoLetters = [
   "ا",
@@ -145,10 +137,6 @@ const pashtoLetters = [
   "آ",
   "ء",
 ];
-
-// ======================================================
-// VERIFY LETTER COUNT
-// ======================================================
 
 console.log("Pashto letters:", pashtoLetters.length);
 
@@ -1030,8 +1018,340 @@ for (let i = 0; i < 30; i++) {
 }
 
 // ======================================================
+// LEVEL 16
+// 50 LESSONS
+// LONG TEXT PRACTICE
+// ======================================================
+
+const longTexts = [
+  `پښتو زموږ یوه مهمه او ښکلې ژبه ده. د دې ژبې زده کړه او لیکل د پښتو د ساتنې او پرمختګ لپاره ډېر ارزښت لري. کله چې یو زده کوونکی د پښتو ټایپ زده کوي، نو کولی شي خپلې لیکنې، معلومات، کیسې، مقالې او پیغامونه په اسانۍ سره په کمپیوټر کې ولیکي.`,
+
+  `د ټایپ کولو مهارت د نن ورځې په نړۍ کې ډېر مهم دی. زده کوونکي، ښوونکي، کارکوونکي او د کمپیوټر نور کاروونکي هره ورځ له کیبورډ څخه استفاده کوي. که څوک غواړي چې په کمپیوټر کې په چټکۍ او دقت کار وکړي، باید د کیبورډ توري په سمه توګه زده کړي او هره ورځ تمرین وکړي.`,
+
+  `د ښه ټایپ کولو لپاره یوازې سرعت کافي نه دی. دقت هم ډېر مهم دی. که یو کس ډېر چټک ټایپ وکړي خو ډېرې تېروتنې وکړي، نو د هغه لیکنه به سمه نه وي. له همدې امله باید لومړی دقت زیات کړو او وروسته په تدریجي ډول خپل سرعت لوړ کړو.`,
+
+  `یو زده کوونکی باید د ټایپ پر مهال خپل لاسونه په مناسب ځای کې کېږدي. د کیبورډ توري باید په یاد زده کړي او هڅه وکړي چې د ټایپ کولو پر مهال کیبورډ ته ډېر ونه ګوري. د ګوتو مناسب حرکت د سرعت او دقت په زیاتولو کې مهم رول لري.`,
+
+  `هره ورځ لږ تر لږه څو دقیقې تمرین کول د ټایپ کولو مهارت ډېر ښه کولی شي. په لومړیو ورځو کې ممکن زده کوونکی ورو ټایپ وکړي او ځینې تېروتنې وکړي، خو دا عادي خبره ده. د دوامدار تمرین په وسیله د ګوتو حرکتونه ورو ورو طبیعي کېږي.`,
+
+  `کمپیوټر د زده کړې لپاره یوه مهمه وسیله ده. زده کوونکي کولی شي د کمپیوټر له لارې کتابونه ولولي، معلومات پیدا کړي، خپلې دندې ولیکي او له نورو سره اړیکه ونیسي. د پښتو ټایپ زده کول د دې ټولو کارونو لپاره ګټور مهارت دی.`,
+
+  `که غواړو چې ښه ټایپ کوونکي شو، باید صبر ولرو. د ټایپ کولو مهارت په یوه ورځ کې نه زده کېږي. هره ورځ منظم تمرین، د تېروتنو اصلاح او د سرعت تدریجي زیاتول د بریا لپاره مهم دي.`,
+
+  `پښتو کیبورډ ځانګړي توري لري چې په نورو ژبو کې شاید موجود نه وي. لکه ټ، ډ، ړ، ڼ، ږ، ښ، ګ، ځ، څ، ژ، ې، ۍ او ئ. د دغو تورو تمرین د پښتو ټایپ زده کړې یوه مهمه برخه ده.`,
+
+  `زده کړه د انسان د پرمختګ لپاره ډېره مهمه ده. یو څوک چې هره ورځ نوی مهارت زده کوي، کولی شي په راتلونکي کې ډېرې بریاوې ترلاسه کړي. د ټایپ زده کړه هم یو داسې مهارت دی چې د کار، زده کړې او اړیکو لپاره ډېر ګټور تمامېږي.`,
+
+  `تمرین د بریا کلیدي ده. که یو زده کوونکی هره ورځ خپل درسونه تکرار کړي، خپلې تېروتنې وګوري او بیا یې اصلاح کړي، نو په لنډ وخت کې به د هغه ټایپ ډېر ښه شي. مهمه خبره دا ده چې تمرین باید منظم او دوامدار وي.`,
+];
+
+for (let i = 0; i < 50; i++) {
+  const selected = [];
+
+  for (let j = 0; j < 2 + (i % 3); j++) {
+    selected.push(
+      longTexts[
+        (i + j) % longTexts.length
+      ]
+    );
+  }
+
+  const text = selected.join("\n\n");
+
+  lessons.push(
+    createLesson(
+      id++,
+      16,
+      "long-text",
+      `د اوږد متن تمرین ${i + 1}`,
+      text,
+      "hard"
+    )
+  );
+}
+
+// ======================================================
+// LEVEL 17
+// 50 LESSONS
+// STORY PRACTICE
+// ======================================================
+
+const stories = [
+  `یو سهار احمد له خوبه پورته شو. هغه خپل کمپیوټر چالان کړ او پرېکړه یې وکړه چې د پښتو ټایپ تمرین وکړي. احمد پوهېده چې د ښه ټایپ لپاره باید هره ورځ تمرین وکړي. هغه لومړی د کیبورډ توري تکرار کړل او وروسته یې ساده کلمې ولیکلې.`,
+
+  `یو زده کوونکی هره ورځ ښوونځي ته تللو. هغه له زده کړې سره ډېره مینه لرله. کله چې به له ښوونځي څخه کور ته راغی، نو خپل درسونه به یې لوستل. وروسته به یې شل دقیقې د کمپیوټر ټایپ تمرین هم کاوه.`,
+
+  `یوه ورځ یو هلک خپل نوی کمپیوټر ترلاسه کړ. هغه ډېر خوشحاله و. لومړی یې غوښتل چې په پښتو لیکل زده کړي. هغه د پښتو کیبورډ توري وکتل او یو یو توری یې تمرین کړ. څو ورځې وروسته یې د ټایپ سرعت ډېر زیات شو.`,
+
+  `یوه کورنۍ په یوه ښکلي کلي کې اوسېده. د کلي شاوخوا لوړې ونې، شنې کروندې او پاکې اوبه وې. ماشومان به هره ورځ له خپلو ملګرو سره لوبې کولې او ماښام به خپلو کورونو ته ستنېدل.`,
+
+  `یو ښوونکي خپلو زده کوونکو ته وویل چې بریا د دوامدار تمرین پایله ده. هغه ورته وویل چې که هره ورځ لږ وخت هم خپل مهارت ته ورکړي، نو په راتلونکي کې به ډېر پرمختګ وکړي. زده کوونکو د ښوونکي خبره ومنله او هره ورځ یې تمرین پیل کړ.`,
+
+  `په یوه ښار کې یو ځوان ژوند کاوه چې غوښتل یې د کمپیوټر په برخه کې کار وکړي. هغه هره ورځ نوي مهارتونه زده کول. هغه HTML، CSS، JavaScript او وروسته React زده کړل. د دې ترڅنګ یې د پښتو ټایپ تمرین هم کاوه.`,
+
+  `یو ماشوم له خپل پلار څخه وپوښتل چې ولې باید هره ورځ تمرین وکړم؟ پلار یې ورته وویل چې مهارت د تمرین له لارې جوړېږي. که ته نن لږ تمرین وکړې او سبا یې بیا تکرار کړې، نو د وخت په تېرېدو سره به ډېر ښه شې.`,
+
+  `په یوه ښوونځي کې د کمپیوټر لپاره ځانګړی ټولګی جوړ شو. زده کوونکو په دې ټولګي کې د کمپیوټر بنسټیز مهارتونه زده کړل. هغوی د کیبورډ کارول، پښتو لیکل، فایل جوړول او د معلوماتو تنظیمول تمرین کړل.`,
+
+  `یو زده کوونکي د ټایپ په لومړیو ورځو کې ډېرې تېروتنې کولې. هغه ناامیده نه شو. هره ورځ یې خپلې تېروتنې ثبتولې او بیا یې هماغه توري تمرینول. څو اونۍ وروسته یې د تېروتنو شمېر ډېر کم شو.`,
+
+  `یو ښه ټایپ کوونکی یوازې چټک نه وي، بلکې دقیق هم وي. هغه پوهېږي چې هر توری په کوم ځای کې دی او د ګوتو حرکتونه یې منظم وي. د اوږدې مودې تمرین وروسته ټایپ کول ورته ډېر اسانه کېږي.`,
+];
+
+for (let i = 0; i < 50; i++) {
+  const selected = [];
+
+  for (let j = 0; j < 2 + (i % 3); j++) {
+    selected.push(
+      stories[
+        (i + j) % stories.length
+      ]
+    );
+  }
+
+  const text = selected.join("\n\n");
+
+  lessons.push(
+    createLesson(
+      id++,
+      17,
+      "story",
+      `د کیسې ټایپ تمرین ${i + 1}`,
+      text,
+      "hard"
+    )
+  );
+}
+
+// ======================================================
+// LEVEL 18
+// 50 LESSONS
+// EDUCATIONAL TEXT
+// ======================================================
+
+const educationalTexts = [
+  `زده کړه د انسان د ژوند یوه مهمه برخه ده. انسان د زده کړې له لارې نوي معلومات ترلاسه کوي او خپل فکر پراخوي. ښوونځي، پوهنتونونه، کتابونه او کمپیوټرونه د زده کړې مهمې وسیلې دي.`,
+
+  `ټکنالوژي د نړۍ په پرمختګ کې مهم رول لري. کمپیوټر، انټرنېټ او سمارټ وسایل د خلکو ورځنی ژوند اسانه کوي. د ټکنالوژۍ د سمې کارونې لپاره باید د کمپیوټر بنسټیز مهارتونه زده کړو.`,
+
+  `کتاب د علم یوه مهمه سرچینه ده. د کتاب لوستل زموږ معلومات زیاتوي او زموږ د فکر کولو وړتیا پیاوړې کوي. هر زده کوونکی باید هڅه وکړي چې هره ورځ لږ تر لږه څو دقیقې مطالعه وکړي.`,
+
+  `کمپیوټر کولی شي د زده کوونکو لپاره ډېرې دروازې پرانیزي. زده کوونکي کولی شي پروګرامونه جوړ کړي، ویب پاڼې جوړې کړي، معلومات تحلیل کړي او له نړۍ سره اړیکه ونیسي.`,
+
+  `د ژبې زده کړه د انسان د اړیکو لپاره مهمه ده. کله چې موږ یوه ژبه ښه زده کړو، کولی شو خپل فکرونه په واضح ډول نورو ته بیان کړو. د پښتو لیکل او ټایپ کول هم د ژبې د ساتنې لپاره مهم دي.`,
+
+  `روغ او منظم ژوند د انسان د پرمختګ لپاره مهم دی. مناسب خوب، منظم کار، مطالعه، تمرین او د وخت ښه مدیریت کولی شي زموږ ورځنی ژوند ښه کړي.`,
+
+  `د وخت مدیریت د بریالي انسانانو له مهمو ځانګړتیاوو څخه دی. که یو څوک خپل وخت په سمه توګه تنظیم کړي، کولی شي د زده کړې، کار، تمرین او استراحت لپاره مناسب وخت پیدا کړي.`,
+
+  `انټرنېټ د معلوماتو یوه لویه سرچینه ده. خلک کولی شي د انټرنېټ له لارې درسونه زده کړي، کتابونه ولولي او له نورو خلکو سره اړیکه ونیسي. خو باید انټرنېټ په مسؤلیت سره وکارول شي.`,
+
+  `پروګرام جوړونه د کمپیوټر یوه مهمه برخه ده. پروګرامر د کوډ په وسیله کمپیوټر ته لارښوونې ورکوي. JavaScript، Python، Java او نورې ژبې د پروګرام جوړونې لپاره کارېږي.`,
+
+  `ویب پاڼه د HTML، CSS او JavaScript په وسیله جوړېدای شي. HTML د پاڼې جوړښت جوړوي، CSS د هغې بڼه تنظیموي او JavaScript تعاملات رامنځته کوي.`,
+];
+
+for (let i = 0; i < 50; i++) {
+  const selected = [];
+
+  for (let j = 0; j < 3 + (i % 3); j++) {
+    selected.push(
+      educationalTexts[
+        (i + j) %
+          educationalTexts.length
+      ]
+    );
+  }
+
+  const text = selected.join("\n\n");
+
+  lessons.push(
+    createLesson(
+      id++,
+      18,
+      "educational",
+      `تعلیمي متن ${i + 1}`,
+      text,
+      "hard"
+    )
+  );
+}
+
+// ======================================================
+// LEVEL 19
+// 50 LESSONS
+// MIXED LONG TEXT
+// ======================================================
+
+for (let i = 0; i < 50; i++) {
+  const words = [];
+
+  for (let j = 0; j < 20; j++) {
+    words.push(
+      easyWords[
+        (i + j) % easyWords.length
+      ]
+    );
+  }
+
+  const phrase =
+    phrases[
+      i % phrases.length
+    ];
+
+  const sentence =
+    sentences[
+      i % sentences.length
+    ];
+
+  const longSentence =
+    longSentences[
+      i % longSentences.length
+    ];
+
+  const text =
+    words.join(" ") +
+    "\n\n" +
+    phrase +
+    "\n\n" +
+    sentence +
+    "\n\n" +
+    longSentence;
+
+  lessons.push(
+    createLesson(
+      id++,
+      19,
+      "mixed-long",
+      `د ګډ اوږد تمرین ${i + 1}`,
+      text,
+      "hard"
+    )
+  );
+}
+
+// ======================================================
+// LEVEL 20
+// 50 LESSONS
+// FINAL LONG TYPING TEST
+// ======================================================
+
+for (let i = 0; i < 50; i++) {
+  const parts = [];
+
+  // Words
+  for (let j = 0; j < 20; j++) {
+    parts.push(
+      easyWords[
+        (i + j) % easyWords.length
+      ]
+    );
+  }
+
+  // Phrases
+  for (let j = 0; j < 5; j++) {
+    parts.push(
+      phrases[
+        (i + j) % phrases.length
+      ]
+    );
+  }
+
+  // Sentences
+  for (let j = 0; j < 4; j++) {
+    parts.push(
+      sentences[
+        (i + j) % sentences.length
+      ]
+    );
+  }
+
+  // Long sentences
+  for (let j = 0; j < 3; j++) {
+    parts.push(
+      longSentences[
+        (i + j) % longSentences.length
+      ]
+    );
+  }
+
+  // Paragraph
+  parts.push(
+    paragraphs[
+      i % paragraphs.length
+    ]
+  );
+
+  const text = parts.join("\n\n");
+
+  lessons.push(
+    createLesson(
+      id++,
+      20,
+      "final-long-test",
+      `وروستی اوږد ټایپ ټیسټ ${i + 1}`,
+      text,
+      "hard"
+    )
+  );
+}
+
+// ======================================================
+// LEVEL 21
+// 20 VERY LONG LESSONS
+// ======================================================
+
+for (let i = 0; i < 20; i++) {
+  const parts = [];
+
+  // 5 paragraphs
+  for (let j = 0; j < 5; j++) {
+    parts.push(
+      paragraphs[
+        (i + j) % paragraphs.length
+      ]
+    );
+  }
+
+  // 5 long sentences
+  for (let j = 0; j < 5; j++) {
+    parts.push(
+      longSentences[
+        (i + j) %
+          longSentences.length
+      ]
+    );
+  }
+
+  // 5 educational texts
+  for (let j = 0; j < 5; j++) {
+    parts.push(
+      educationalTexts[
+        (i + j) %
+          educationalTexts.length
+      ]
+    );
+  }
+
+  const text = parts.join("\n\n");
+
+  lessons.push(
+    createLesson(
+      id++,
+      21,
+      "very-long-text",
+      `ډېر اوږد متن ${i + 1}`,
+      text,
+      "hard"
+    )
+  );
+}
+
+// ======================================================
 // VERIFY LESSONS
 // ======================================================
+
+const TOTAL_LEVELS = 21;
 
 console.log("====================================");
 console.log(
@@ -1040,7 +1360,9 @@ console.log(
 console.log(
   `Pashto letters: ${pashtoLetters.length}`
 );
-console.log("Levels: 15");
+console.log(
+  `Levels: ${TOTAL_LEVELS}`
+);
 console.log("====================================");
 
 // ======================================================
@@ -1051,11 +1373,11 @@ app.get("/", (req, res) => {
   res.json({
     success: true,
     name: "Pashto Typing Learning API",
-    version: "3.0.0",
+    version: "4.0.0",
     language: "Pashto",
     totalLessons: lessons.length,
     totalLetters: pashtoLetters.length,
-    totalLevels: 15,
+    totalLevels: TOTAL_LEVELS,
   });
 });
 
@@ -1163,7 +1485,8 @@ app.get(
       });
     }
 
-    const lesson = randomItem(levelLessons);
+    const lesson =
+      randomItem(levelLessons);
 
     res.json({
       success: true,
@@ -1186,6 +1509,14 @@ app.get(
       (lesson) =>
         lesson.level === level
     );
+
+    if (result.length === 0) {
+      return res.status(404).json({
+        success: false,
+        message: "دا Level پیدا نه شو.",
+        level,
+      });
+    }
 
     res.json({
       success: true,
@@ -1226,7 +1557,8 @@ app.get(
 app.get(
   "/api/lessons/:id",
   (req, res) => {
-    const lessonId = Number(req.params.id);
+    const lessonId =
+      Number(req.params.id);
 
     const lesson = lessons.find(
       (item) =>
@@ -1254,7 +1586,11 @@ app.get(
 app.get("/api/levels", (req, res) => {
   const levels = [];
 
-  for (let level = 1; level <= 15; level++) {
+  for (
+    let level = 1;
+    level <= TOTAL_LEVELS;
+    level++
+  ) {
     const levelLessons =
       lessons.filter(
         (lesson) =>
@@ -1264,7 +1600,8 @@ app.get("/api/levels", (req, res) => {
     levels.push({
       level,
 
-      count: levelLessons.length,
+      count:
+        levelLessons.length,
 
       totalCharacters:
         levelLessons.reduce(
@@ -1286,6 +1623,7 @@ app.get("/api/levels", (req, res) => {
 
   res.json({
     success: true,
+    totalLevels: TOTAL_LEVELS,
     levels,
   });
 });
@@ -1329,7 +1667,11 @@ app.get("/api/search", (req, res) => {
 app.get("/api/stats", (req, res) => {
   const levelStats = {};
 
-  for (let level = 1; level <= 15; level++) {
+  for (
+    let level = 1;
+    level <= TOTAL_LEVELS;
+    level++
+  ) {
     const levelLessons =
       lessons.filter(
         (lesson) =>
@@ -1337,7 +1679,8 @@ app.get("/api/stats", (req, res) => {
       );
 
     levelStats[level] = {
-      lessons: levelLessons.length,
+      lessons:
+        levelLessons.length,
 
       characters:
         levelLessons.reduce(
@@ -1366,7 +1709,8 @@ app.get("/api/stats", (req, res) => {
     totalLetters:
       pashtoLetters.length,
 
-    totalLevels: 15,
+    totalLevels:
+      TOTAL_LEVELS,
 
     totalCharacters:
       lessons.reduce(
@@ -1417,8 +1761,10 @@ app.get(
 
     res.json({
       success: true,
+
       totalLetters:
         pashtoLetters.length,
+
       coverage,
     });
   }
@@ -1434,7 +1780,8 @@ app.get(
     const result =
       lessons.filter(
         (lesson) =>
-          lesson.difficulty === "easy"
+          lesson.difficulty ===
+          "easy"
       );
 
     res.json({
@@ -1455,7 +1802,8 @@ app.get(
     const result =
       lessons.filter(
         (lesson) =>
-          lesson.difficulty === "medium"
+          lesson.difficulty ===
+          "medium"
       );
 
     res.json({
@@ -1476,7 +1824,8 @@ app.get(
     const result =
       lessons.filter(
         (lesson) =>
-          lesson.difficulty === "hard"
+          lesson.difficulty ===
+          "hard"
       );
 
     res.json({
@@ -1554,7 +1903,7 @@ app.listen(PORT, () => {
   );
 
   console.log(
-    "Levels: 15"
+    `Levels: ${TOTAL_LEVELS}`
   );
 
   console.log(
