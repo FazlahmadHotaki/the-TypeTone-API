@@ -1,5 +1,3 @@
-// server.js
-
 const express = require("express");
 const cors = require("cors");
 
@@ -87,7 +85,7 @@ const pashtoKeyboard = {
 };
 
 // ======================================================
-// PASHTO LETTERS - 46
+// PASHTO LETTERS
 // ======================================================
 
 const pashtoLetters = [
@@ -256,16 +254,16 @@ const longSentences = [
 // ======================================================
 
 const paragraphs = [
-  `پښتو ټایپ زده کول د هر هغه چا لپاره مهم دي چې غواړي په کمپیوټر کې په پښتو ژبه لیکل وکړي. 
-لومړی باید د کیبورډ توري زده کړو، بیا باید د کلمو او جملو تمرین وکړو. 
+  `پښتو ټایپ زده کول د هر هغه چا لپاره مهم دي چې غواړي په کمپیوټر کې په پښتو ژبه لیکل وکړي.
+لومړی باید د کیبورډ توري زده کړو، بیا باید د کلمو او جملو تمرین وکړو.
 هره ورځ لږ تمرین کول د ښه سرعت او دقت سبب کېږي.`,
 
-  `د ټایپ کولو پر مهال باید لاسونه په سمه توګه د کیبورډ پر تڼیو کېښودل شي. 
-منځنی قطار د ټایپ کولو په زده کړه کې ډېر مهم دی. 
+  `د ټایپ کولو پر مهال باید لاسونه په سمه توګه د کیبورډ پر تڼیو کېښودل شي.
+منځنی قطار د ټایپ کولو په زده کړه کې ډېر مهم دی.
 که زده کوونکی د منځني قطار توري ښه زده کړي، نو د نورو تورو زده کول هم ورته اسانه کېږي.`,
 
-  `ښه ټایپ کوونکی باید د سرعت تر څنګ دقت ته هم پام وکړي. 
-که یو څوک ډېر چټک ټایپ وکړي خو ډېرې تېروتنې ولري، نو د هغه ټایپ ډېر ګټور نه وي. 
+  `ښه ټایپ کوونکی باید د سرعت تر څنګ دقت ته هم پام وکړي.
+که یو څوک ډېر چټک ټایپ وکړي خو ډېرې تېروتنې ولري، نو د هغه ټایپ ډېر ګټور نه وي.
 له همدې امله باید لومړی دقت او وروسته سرعت زیات شي.`,
 ];
 
@@ -274,21 +272,21 @@ const paragraphs = [
 // ======================================================
 
 const longTexts = [
-  `زه غواړم پښتو ټایپ په ښه ډول زده کړم. 
-هره ورځ باید د کیبورډ توري تمرین کړم او هڅه وکړم چې د هر توري ځای په یاد وساتم. 
-کله چې د تورو ځایونه راته معلوم شي، نو د کلمو لیکل به ډېر اسانه شي. 
-د ټایپ کولو په وخت کې باید د کیبورډ پر ځای خپل متن ته پام وکړم. 
+  `زه غواړم پښتو ټایپ په ښه ډول زده کړم.
+هره ورځ باید د کیبورډ توري تمرین کړم او هڅه وکړم چې د هر توري ځای په یاد وساتم.
+کله چې د تورو ځایونه راته معلوم شي، نو د کلمو لیکل به ډېر اسانه شي.
+د ټایپ کولو په وخت کې باید د کیبورډ پر ځای خپل متن ته پام وکړم.
 دا تمرین به زما سرعت او دقت دواړه زیات کړي.`,
 
-  `د پښتو کیبورډ درې مهم قطارونه لري. 
-پورته قطار، منځنی قطار او لاندې قطار. 
-منځنی قطار د لاسونو د آرام ځای په توګه کار کوي. 
-زده کوونکی باید لومړی د منځني قطار توري ښه زده کړي. 
+  `د پښتو کیبورډ درې مهم قطارونه لري.
+پورته قطار، منځنی قطار او لاندې قطار.
+منځنی قطار د لاسونو د آرام ځای په توګه کار کوي.
+زده کوونکی باید لومړی د منځني قطار توري ښه زده کړي.
 وروسته کولی شي نور قطارونه هم تمرین کړي.`,
 
-  `هره ورځ منظم تمرین د ټایپ کولو وړتیا ډېروي. 
-که یو زده کوونکی هره ورځ شل یا دېرش دقیقې تمرین وکړي، 
-نو وروسته کولی شي په لږ وخت کې ډېر متن ولیکي. 
+  `هره ورځ منظم تمرین د ټایپ کولو وړتیا ډېروي.
+که یو زده کوونکی هره ورځ شل یا دېرش دقیقې تمرین وکړي،
+نو وروسته کولی شي په لږ وخت کې ډېر متن ولیکي.
 مهمه خبره دا ده چې تمرین باید دوامداره وي.`,
 ];
 
@@ -297,14 +295,14 @@ const longTexts = [
 // ======================================================
 
 const stories = [
-  `یو زده کوونکی هره ورځ خپل کمپیوټر چالان کړ او د پښتو ټایپ تمرین یې پیل کړ. 
-په لومړیو ورځو کې یې ډېرې تېروتنې کولې، خو هغه تمرین ته دوام ورکړ. 
-ورو ورو یې د کیبورډ توري زده کړل او د ټایپ سرعت یې زیات شو. 
+  `یو زده کوونکی هره ورځ خپل کمپیوټر چالان کړ او د پښتو ټایپ تمرین یې پیل کړ.
+په لومړیو ورځو کې یې ډېرې تېروتنې کولې، خو هغه تمرین ته دوام ورکړ.
+ورو ورو یې د کیبورډ توري زده کړل او د ټایپ سرعت یې زیات شو.
 څو اوونۍ وروسته هغه کولی شو اوږدې پښتو جملې په اسانه ولیکي.`,
 
-  `یو ماشوم غوښتل چې د کمپیوټر کارول زده کړي. 
-هغه لومړی د کیبورډ توري زده کړل. 
-وروسته یې ساده کلمې ولیکلې او بیا یې جملې تمرین کړې. 
+  `یو ماشوم غوښتل چې د کمپیوټر کارول زده کړي.
+هغه لومړی د کیبورډ توري زده کړل.
+وروسته یې ساده کلمې ولیکلې او بیا یې جملې تمرین کړې.
 د ډېر تمرین وروسته یې د پښتو ټایپ کولو مهارت ډېر ښه شو.`,
 ];
 
@@ -313,18 +311,18 @@ const stories = [
 // ======================================================
 
 const educationalTexts = [
-  `ټایپ کول یوه مهمه کمپیوټري وړتیا ده. 
-په نننۍ نړۍ کې خلک د معلوماتو د لیکلو، شریکولو او ساتلو لپاره کمپیوټر کاروي. 
+  `ټایپ کول یوه مهمه کمپیوټري وړتیا ده.
+په نننۍ نړۍ کې خلک د معلوماتو د لیکلو، شریکولو او ساتلو لپاره کمپیوټر کاروي.
 که یو څوک ښه ټایپ وکړي، نو کولی شي خپل کارونه په لږ وخت کې ترسره کړي.`,
 
-  `د ټایپ زده کړې لپاره باید له ساده تمرینونو څخه پیل وشي. 
-لومړی باید یو یو توری تمرین شي. 
-وروسته دوه او درې توري یو ځای ولیکل شي. 
+  `د ټایپ زده کړې لپاره باید له ساده تمرینونو څخه پیل وشي.
+لومړی باید یو یو توری تمرین شي.
+وروسته دوه او درې توري یو ځای ولیکل شي.
 بیا باید ساده کلمې، عبارتونه او جملې تمرین شي.`,
 
-  `د کیبورډ د منځني قطار زده کړه ډېره مهمه ده. 
-د لاسونو ګوتې باید د منځني قطار پر تڼیو کېښودل شي. 
-له دې ځای څخه ګوتې نورو تورو ته حرکت کوي. 
+  `د کیبورډ د منځني قطار زده کړه ډېره مهمه ده.
+د لاسونو ګوتې باید د منځني قطار پر تڼیو کېښودل شي.
+له دې ځای څخه ګوتې نورو تورو ته حرکت کوي.
 له همدې امله د منځني قطار ښه زده کړه د چټک ټایپ بنسټ جوړوي.`,
 ];
 
@@ -417,203 +415,17 @@ const keyboardRows = {
 };
 
 // ======================================================
-// HELPER FUNCTIONS
+// FIRST STEP - F + J
 // ======================================================
 
-function repeatText(text, count) {
-  return Array(count).fill(text).join(" ");
-}
+// F = ب
+// J = ت
+// The first step trains both hands.
 
-function randomItem(array) {
-  return array[Math.floor(Math.random() * array.length)];
-}
-
-function createLesson(
-  id,
-  level,
-  type,
-  title,
-  text,
-  difficulty = "easy"
-) {
-  return {
-    id,
-    level,
-    type,
-    title,
-    text,
-    difficulty,
-    language: "ps",
-    characterCount: text.length,
-    wordCount: text.trim()
-      ? text.trim().split(/\s+/).length
-      : 0,
-  };
-}
+const firstStepKeys = ["ب", "ت"];
 
 // ======================================================
-// LESSONS ARRAY
-// ======================================================
-
-const lessons = [];
-let id = 1;
-
-// ======================================================
-// LEVEL 1
-// SINGLE PASHTO LETTERS
-// 46 LESSONS
-// ======================================================
-
-pashtoLetters.forEach((letter, index) => {
-  lessons.push(
-    createLesson(
-      id++,
-      1,
-      "letter",
-      `د ${letter} توري تمرین`,
-      repeatText(letter, 50),
-      "easy"
-    )
-  );
-});
-
-// ======================================================
-// LEVEL 2
-// TWO LETTER COMBINATIONS
-// 50 LESSONS
-// ======================================================
-
-for (let i = 0; i < 50; i++) {
-  const a = pashtoLetters[i % pashtoLetters.length];
-  const b =
-    pashtoLetters[(i + 1) % pashtoLetters.length];
-
-  const text = repeatText(a + b, 30);
-
-  lessons.push(
-    createLesson(
-      id++,
-      2,
-      "combination",
-      `د دوو تورو تمرین ${i + 1}`,
-      text,
-      "easy"
-    )
-  );
-}
-
-// ======================================================
-// LEVEL 3
-// WORDS
-// 50 LESSONS
-// ======================================================
-
-for (let i = 0; i < 50; i++) {
-  const selected = [];
-
-  for (let j = 0; j < 8; j++) {
-    selected.push(
-      easyWords[
-        (i + j) % easyWords.length
-      ]
-    );
-  }
-
-  lessons.push(
-    createLesson(
-      id++,
-      3,
-      "words",
-      `د کلمو تمرین ${i + 1}`,
-      repeatText(selected.join(" "), 3),
-      "easy"
-    )
-  );
-}
-
-// ======================================================
-// LEVEL 4
-// PHRASES
-// 50 LESSONS
-// ======================================================
-
-for (let i = 0; i < 50; i++) {
-  const selected = [];
-
-  for (let j = 0; j < 6; j++) {
-    selected.push(
-      phrases[
-        (i + j) % phrases.length
-      ]
-    );
-  }
-
-  lessons.push(
-    createLesson(
-      id++,
-      4,
-      "phrases",
-      `د عبارتونو تمرین ${i + 1}`,
-      repeatText(selected.join(" "), 3),
-      "easy"
-    )
-  );
-}
-
-// ======================================================
-// LEVEL 5
-// KEYBOARD ROW PRACTICE
-// ORIGINAL 50 LESSONS
-// ======================================================
-
-for (let i = 0; i < 50; i++) {
-  let rowName;
-  let row;
-
-  if (i < 17) {
-    rowName = "پورته";
-    row = keyboardRows.top;
-  } else if (i < 34) {
-    rowName = "منځنی";
-    row = keyboardRows.home;
-  } else {
-    rowName = "لاندې";
-    row = keyboardRows.bottom;
-  }
-
-  const selected = [];
-
-  for (let j = 0; j < 15; j++) {
-    selected.push(
-      row[
-        (i + j) % row.length
-      ]
-    );
-  }
-
-  const text = repeatText(
-    selected.join(""),
-    5
-  );
-
-  lessons.push(
-    createLesson(
-      id++,
-      5,
-      "keyboard-row",
-      `د ${rowName} قطار تمرین ${i + 1}`,
-      text,
-      "medium"
-    )
-  );
-}
-
-// ======================================================
-// ======================================================
-// HOME ROW SPECIAL TRAINING
-// 100 LESSONS
-// DEEP HOME KEYBOARD PRACTICE
-// ======================================================
+// HOME ROW
 // ======================================================
 
 const homeRowLetters = [
@@ -630,10 +442,6 @@ const homeRowLetters = [
   "ګ",
 ];
 
-// ======================================================
-// LEFT SIDE OF HOME ROW
-// ======================================================
-
 const homeRowLeft = [
   "ش",
   "س",
@@ -641,10 +449,6 @@ const homeRowLeft = [
   "ب",
   "ل",
 ];
-
-// ======================================================
-// RIGHT SIDE OF HOME ROW
-// ======================================================
 
 const homeRowRight = [
   "ا",
@@ -769,9 +573,242 @@ const homeRowSentences = [
 ];
 
 // ======================================================
+// HELPER FUNCTIONS
+// ======================================================
+
+function repeatText(text, count) {
+  return Array(count).fill(text).join(" ");
+}
+
+function randomItem(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
+function createLesson(
+  id,
+  level,
+  type,
+  title,
+  text,
+  difficulty = "easy"
+) {
+  return {
+    id,
+    level,
+    type,
+    title,
+    text,
+    difficulty,
+    language: "ps",
+    characterCount: text.length,
+    wordCount: text.trim()
+      ? text.trim().split(/\s+/).length
+      : 0,
+  };
+}
+
+// ======================================================
+// LESSONS ARRAY
+// ======================================================
+
+const lessons = [];
+let id = 1;
+
+// ======================================================
+// LEVEL 1
+// FIRST STEP - F + J
+// BOTH HANDS
+// ======================================================
+
+// F = ب
+// J = ت
+//
+// Lesson 1: ب ت ب ت ب ت...
+// Lesson 2: ت ب ت ب ت ب...
+// Lesson 3: ب ت ب ت ب ت...
+// Lesson 4: ت ب ت ب ت ب...
+
+for (let i = 0; i < 20; i++) {
+  const firstKey =
+    firstStepKeys[i % firstStepKeys.length];
+
+  const secondKey =
+    firstStepKeys[
+      (i + 1) % firstStepKeys.length
+    ];
+
+  const text = repeatText(
+    firstKey + " " + secondKey,
+    25
+  );
+
+  lessons.push(
+    createLesson(
+      id++,
+      1,
+      "first-step",
+      `د F او J تڼیو تمرین ${i + 1}`,
+      text,
+      "easy"
+    )
+  );
+}
+
+// ======================================================
+// LEVEL 2
+// TWO LETTER COMBINATIONS
+// 50 LESSONS
+// ======================================================
+
+for (let i = 0; i < 50; i++) {
+  const a =
+    pashtoLetters[
+      i % pashtoLetters.length
+    ];
+
+  const b =
+    pashtoLetters[
+      (i + 1) % pashtoLetters.length
+    ];
+
+  const text = repeatText(
+    a + b,
+    30
+  );
+
+  lessons.push(
+    createLesson(
+      id++,
+      2,
+      "combination",
+      `د دوو تورو تمرین ${i + 1}`,
+      text,
+      "easy"
+    )
+  );
+}
+
+// ======================================================
+// LEVEL 3
+// WORDS
+// 50 LESSONS
+// ======================================================
+
+for (let i = 0; i < 50; i++) {
+  const selected = [];
+
+  for (let j = 0; j < 8; j++) {
+    selected.push(
+      easyWords[
+        (i + j) % easyWords.length
+      ]
+    );
+  }
+
+  lessons.push(
+    createLesson(
+      id++,
+      3,
+      "words",
+      `د کلمو تمرین ${i + 1}`,
+      repeatText(
+        selected.join(" "),
+        3
+      ),
+      "easy"
+    )
+  );
+}
+
+// ======================================================
+// LEVEL 4
+// PHRASES
+// 50 LESSONS
+// ======================================================
+
+for (let i = 0; i < 50; i++) {
+  const selected = [];
+
+  for (let j = 0; j < 6; j++) {
+    selected.push(
+      phrases[
+        (i + j) % phrases.length
+      ]
+    );
+  }
+
+  lessons.push(
+    createLesson(
+      id++,
+      4,
+      "phrases",
+      `د عبارتونو تمرین ${i + 1}`,
+      repeatText(
+        selected.join(" "),
+        3
+      ),
+      "easy"
+    )
+  );
+}
+
+// ======================================================
+// LEVEL 5
+// KEYBOARD ROW PRACTICE
+// ORIGINAL 50 LESSONS
+// ======================================================
+
+for (let i = 0; i < 50; i++) {
+  let rowName;
+  let row;
+
+  if (i < 17) {
+    rowName = "پورته";
+    row = keyboardRows.top;
+  } else if (i < 34) {
+    rowName = "منځنی";
+    row = keyboardRows.home;
+  } else {
+    rowName = "لاندې";
+    row = keyboardRows.bottom;
+  }
+
+  const selected = [];
+
+  for (let j = 0; j < 15; j++) {
+    selected.push(
+      row[
+        (i + j) % row.length
+      ]
+    );
+  }
+
+  const text = repeatText(
+    selected.join(""),
+    5
+  );
+
+  lessons.push(
+    createLesson(
+      id++,
+      5,
+      "keyboard-row",
+      `د ${rowName} قطار تمرین ${i + 1}`,
+      text,
+      "medium"
+    )
+  );
+}
+
+// ======================================================
+// HOME ROW SPECIAL TRAINING
+// 100 LESSONS
+// ======================================================
+
+// ------------------------------------------------------
 // HOME ROW LESSON 1-20
 // SINGLE LETTER FOCUS
-// ======================================================
+// ------------------------------------------------------
 
 for (let i = 0; i < 20; i++) {
   const letter =
@@ -796,10 +833,10 @@ for (let i = 0; i < 20; i++) {
   );
 }
 
-// ======================================================
+// ------------------------------------------------------
 // HOME ROW LESSON 21-40
 // TWO LETTER COMBINATIONS
-// ======================================================
+// ------------------------------------------------------
 
 for (let i = 0; i < 20; i++) {
   const combination =
@@ -824,10 +861,10 @@ for (let i = 0; i < 20; i++) {
   );
 }
 
-// ======================================================
+// ------------------------------------------------------
 // HOME ROW LESSON 41-55
 // THREE LETTER COMBINATIONS
-// ======================================================
+// ------------------------------------------------------
 
 for (let i = 0; i < 15; i++) {
   const a =
@@ -867,10 +904,10 @@ for (let i = 0; i < 15; i++) {
   );
 }
 
-// ======================================================
+// ------------------------------------------------------
 // HOME ROW LESSON 56-65
 // LEFT HAND
-// ======================================================
+// ------------------------------------------------------
 
 for (let i = 0; i < 10; i++) {
   const selected = [];
@@ -901,10 +938,10 @@ for (let i = 0; i < 10; i++) {
   );
 }
 
-// ======================================================
+// ------------------------------------------------------
 // HOME ROW LESSON 66-75
 // RIGHT HAND
-// ======================================================
+// ------------------------------------------------------
 
 for (let i = 0; i < 10; i++) {
   const selected = [];
@@ -935,10 +972,10 @@ for (let i = 0; i < 10; i++) {
   );
 }
 
-// ======================================================
+// ------------------------------------------------------
 // HOME ROW LESSON 76-85
 // LEFT + RIGHT HAND
-// ======================================================
+// ------------------------------------------------------
 
 for (let i = 0; i < 10; i++) {
   const selected = [];
@@ -978,10 +1015,10 @@ for (let i = 0; i < 10; i++) {
   );
 }
 
-// ======================================================
+// ------------------------------------------------------
 // HOME ROW LESSON 86-95
 // WORD PRACTICE
-// ======================================================
+// ------------------------------------------------------
 
 for (let i = 0; i < 10; i++) {
   const selected = [];
@@ -1012,10 +1049,10 @@ for (let i = 0; i < 10; i++) {
   );
 }
 
-// ======================================================
+// ------------------------------------------------------
 // HOME ROW LESSON 96-100
 // PHRASES + SENTENCES
-// ======================================================
+// ------------------------------------------------------
 
 for (let i = 0; i < 5; i++) {
   const phrase =
@@ -1068,7 +1105,10 @@ for (let i = 0; i < 50; i++) {
       6,
       "sentences",
       `د جملو تمرین ${i + 1}`,
-      repeatText(selected.join(" "), 2),
+      repeatText(
+        selected.join(" "),
+        2
+      ),
       "medium"
     )
   );
@@ -1537,7 +1577,7 @@ app.get("/", (req, res) => {
     homeRowLessons: 100,
 
     levels: {
-      1: "Pashto Letters",
+      1: "F + J First Step",
       2: "Two Letter Combinations",
       3: "Words",
       4: "Phrases",
@@ -1583,11 +1623,34 @@ app.get("/api/keyboard", (req, res) => {
     keyboard: pashtoKeyboard,
     rows: keyboardRows,
 
+    firstStep: {
+      leftKey: {
+        key: "F",
+        letter: "ب",
+      },
+
+      rightKey: {
+        key: "J",
+        letter: "ت",
+      },
+
+      description:
+        "لومړی تمرین د F او J دواړو تڼیو څخه پیل کېږي.",
+    },
+
     homeRow: {
-      totalLetters: homeRowLetters.length,
-      letters: homeRowLetters,
-      leftHand: homeRowLeft,
-      rightHand: homeRowRight,
+      totalLetters:
+        homeRowLetters.length,
+
+      letters:
+        homeRowLetters,
+
+      leftHand:
+        homeRowLeft,
+
+      rightHand:
+        homeRowRight,
+
       lessons: 100,
     },
 
@@ -1612,68 +1675,86 @@ app.get("/api/letters", (req, res) => {
 // RANDOM LETTER
 // ======================================================
 
-app.get("/api/letters/random", (req, res) => {
-  const letter = randomItem(pashtoLetters);
+app.get(
+  "/api/letters/random",
+  (req, res) => {
+    const letter =
+      randomItem(pashtoLetters);
 
-  res.json({
-    success: true,
-    letter,
-  });
-});
+    res.json({
+      success: true,
+      letter,
+    });
+  }
+);
 
 // ======================================================
 // SPECIFIC LETTER
 // ======================================================
 
-app.get("/api/letters/:letter", (req, res) => {
-  const letter = req.params.letter;
+app.get(
+  "/api/letters/:letter",
+  (req, res) => {
+    const letter =
+      req.params.letter;
 
-  const index =
-    pashtoLetters.indexOf(letter);
+    const index =
+      pashtoLetters.indexOf(letter);
 
-  if (index === -1) {
-    return res.status(404).json({
-      success: false,
-      message: "توری ونه موندل شو",
+    if (index === -1) {
+      return res.status(404).json({
+        success: false,
+        message:
+          "توری ونه موندل شو",
+      });
+    }
+
+    res.json({
+      success: true,
+      letter,
+      index,
+
+      lesson:
+        lessons.find(
+          (lesson) =>
+            lesson.type === "letter" &&
+            lesson.text.includes(letter)
+        ),
     });
   }
-
-  res.json({
-    success: true,
-    letter,
-    index,
-    lesson: lessons.find(
-      (lesson) =>
-        lesson.type === "letter" &&
-        lesson.text.includes(letter)
-    ),
-  });
-});
+);
 
 // ======================================================
 // ALL LESSONS
 // ======================================================
 
-app.get("/api/lessons", (req, res) => {
-  res.json({
-    success: true,
-    total: lessons.length,
-    lessons,
-  });
-});
+app.get(
+  "/api/lessons",
+  (req, res) => {
+    res.json({
+      success: true,
+      total: lessons.length,
+      lessons,
+    });
+  }
+);
 
 // ======================================================
 // RANDOM LESSON
 // ======================================================
 
-app.get("/api/lessons/random", (req, res) => {
-  const lesson = randomItem(lessons);
+app.get(
+  "/api/lessons/random",
+  (req, res) => {
+    const lesson =
+      randomItem(lessons);
 
-  res.json({
-    success: true,
-    lesson,
-  });
-});
+    res.json({
+      success: true,
+      lesson,
+    });
+  }
+);
 
 // ======================================================
 // RANDOM LESSON BY LEVEL
@@ -1682,7 +1763,8 @@ app.get("/api/lessons/random", (req, res) => {
 app.get(
   "/api/lessons/random/:level",
   (req, res) => {
-    const level = Number(req.params.level);
+    const level =
+      Number(req.params.level);
 
     const levelLessons =
       lessons.filter(
@@ -1690,17 +1772,21 @@ app.get(
           lesson.level === level
       );
 
-    if (levelLessons.length === 0) {
+    if (
+      levelLessons.length === 0
+    ) {
       return res.status(404).json({
         success: false,
-        message: "دا level ونه موندل شو",
+        message:
+          "دا level ونه موندل شو",
       });
     }
 
     res.json({
       success: true,
       level,
-      lesson: randomItem(levelLessons),
+      lesson:
+        randomItem(levelLessons),
     });
   }
 );
@@ -1712,7 +1798,8 @@ app.get(
 app.get(
   "/api/lessons/level/:level",
   (req, res) => {
-    const level = Number(req.params.level);
+    const level =
+      Number(req.params.level);
 
     const levelLessons =
       lessons.filter(
@@ -1720,18 +1807,23 @@ app.get(
           lesson.level === level
       );
 
-    if (levelLessons.length === 0) {
+    if (
+      levelLessons.length === 0
+    ) {
       return res.status(404).json({
         success: false,
-        message: "دا level ونه موندل شو",
+        message:
+          "دا level ونه موندل شو",
       });
     }
 
     res.json({
       success: true,
       level,
-      total: levelLessons.length,
-      lessons: levelLessons,
+      total:
+        levelLessons.length,
+      lessons:
+        levelLessons,
     });
   }
 );
@@ -1754,13 +1846,23 @@ app.get(
     res.json({
       success: true,
       level: 5,
-      total: homeLessons.length,
+      total:
+        homeLessons.length,
+
       description:
         "د پښتو کیبورډ د منځني قطار ۱۰۰ ځانګړي تمرینونه",
-      letters: homeRowLetters,
-      leftHand: homeRowLeft,
-      rightHand: homeRowRight,
-      lessons: homeLessons,
+
+      letters:
+        homeRowLetters,
+
+      leftHand:
+        homeRowLeft,
+
+      rightHand:
+        homeRowRight,
+
+      lessons:
+        homeLessons,
     });
   }
 );
@@ -1772,7 +1874,8 @@ app.get(
 app.get(
   "/api/lessons/type/:type",
   (req, res) => {
-    const type = req.params.type;
+    const type =
+      req.params.type;
 
     const typeLessons =
       lessons.filter(
@@ -1780,7 +1883,9 @@ app.get(
           lesson.type === type
       );
 
-    if (typeLessons.length === 0) {
+    if (
+      typeLessons.length === 0
+    ) {
       return res.status(404).json({
         success: false,
         message:
@@ -1791,8 +1896,10 @@ app.get(
     res.json({
       success: true,
       type,
-      total: typeLessons.length,
-      lessons: typeLessons,
+      total:
+        typeLessons.length,
+      lessons:
+        typeLessons,
     });
   }
 );
@@ -1816,7 +1923,8 @@ app.get(
     if (!lesson) {
       return res.status(404).json({
         success: false,
-        message: "Lesson ونه موندل شو",
+        message:
+          "Lesson ونه موندل شو",
       });
     }
 
@@ -1831,120 +1939,136 @@ app.get(
 // LEVELS
 // ======================================================
 
-app.get("/api/levels", (req, res) => {
-  const levels = [];
+app.get(
+  "/api/levels",
+  (req, res) => {
+    const levels = [];
 
-  for (
-    let level = 1;
-    level <= totalLevels;
-    level++
-  ) {
-    const levelLessons =
-      lessons.filter(
-        (lesson) =>
-          lesson.level === level
-      );
+    for (
+      let level = 1;
+      level <= totalLevels;
+      level++
+    ) {
+      const levelLessons =
+        lessons.filter(
+          (lesson) =>
+            lesson.level === level
+        );
 
-    levels.push({
-      level,
-      totalLessons:
-        levelLessons.length,
-      types: [
-        ...new Set(
-          levelLessons.map(
-            (lesson) =>
-              lesson.type
-          )
-        ),
-      ],
+      levels.push({
+        level,
+
+        totalLessons:
+          levelLessons.length,
+
+        types: [
+          ...new Set(
+            levelLessons.map(
+              (lesson) =>
+                lesson.type
+            )
+          ),
+        ],
+      });
+    }
+
+    res.json({
+      success: true,
+      totalLevels,
+      levels,
     });
   }
-
-  res.json({
-    success: true,
-    totalLevels,
-    levels,
-  });
-});
+);
 
 // ======================================================
 // STATISTICS
 // ======================================================
 
-app.get("/api/stats", (req, res) => {
-  const statistics = [];
+app.get(
+  "/api/stats",
+  (req, res) => {
+    const statistics = [];
 
-  for (
-    let level = 1;
-    level <= totalLevels;
-    level++
-  ) {
-    const levelLessons =
-      lessons.filter(
-        (lesson) =>
-          lesson.level === level
-      );
+    for (
+      let level = 1;
+      level <= totalLevels;
+      level++
+    ) {
+      const levelLessons =
+        lessons.filter(
+          (lesson) =>
+            lesson.level === level
+        );
 
-    statistics.push({
-      level,
-      lessons:
-        levelLessons.length,
-      characters:
-        levelLessons.reduce(
-          (total, lesson) =>
-            total +
-            lesson.characterCount,
-          0
-        ),
-      words:
-        levelLessons.reduce(
-          (total, lesson) =>
-            total +
-            lesson.wordCount,
-          0
-        ),
+      statistics.push({
+        level,
+
+        lessons:
+          levelLessons.length,
+
+        characters:
+          levelLessons.reduce(
+            (total, lesson) =>
+              total +
+              lesson.characterCount,
+            0
+          ),
+
+        words:
+          levelLessons.reduce(
+            (total, lesson) =>
+              total +
+              lesson.wordCount,
+            0
+          ),
+      });
+    }
+
+    res.json({
+      success: true,
+      totalLessons,
+      totalLevels,
+      statistics,
     });
   }
-
-  res.json({
-    success: true,
-    totalLessons,
-    totalLevels,
-    statistics,
-  });
-});
+);
 
 // ======================================================
 // COVERAGE
 // ======================================================
 
-app.get("/api/coverage", (req, res) => {
-  const letterCoverage =
-    pashtoLetters.map(
-      (letter) => {
-        const count =
-          lessons.filter(
-            (lesson) =>
-              lesson.text.includes(
-                letter
-              )
-          ).length;
+app.get(
+  "/api/coverage",
+  (req, res) => {
+    const letterCoverage =
+      pashtoLetters.map(
+        (letter) => {
+          const count =
+            lessons.filter(
+              (lesson) =>
+                lesson.text.includes(
+                  letter
+                )
+            ).length;
 
-        return {
-          letter,
-          lessons: count,
-        };
-      }
-    );
+          return {
+            letter,
+            lessons: count,
+          };
+        }
+      );
 
-  res.json({
-    success: true,
-    totalLetters:
-      pashtoLetters.length,
-    coverage:
-      letterCoverage,
-  });
-});
+    res.json({
+      success: true,
+
+      totalLetters:
+        pashtoLetters.length,
+
+      coverage:
+        letterCoverage,
+    });
+  }
+);
 
 // ======================================================
 // DIFFICULTY
@@ -1963,7 +2087,9 @@ app.get(
           difficulty
       );
 
-    if (result.length === 0) {
+    if (
+      result.length === 0
+    ) {
       return res.status(404).json({
         success: false,
         message:
@@ -1974,8 +2100,10 @@ app.get(
     res.json({
       success: true,
       difficulty,
-      total: result.length,
-      lessons: result,
+      total:
+        result.length,
+      lessons:
+        result,
     });
   }
 );
@@ -1984,63 +2112,81 @@ app.get(
 // SEARCH
 // ======================================================
 
-app.get("/api/search", (req, res) => {
-  const query =
-    String(req.query.q || "")
-      .trim()
-      .toLowerCase();
+app.get(
+  "/api/search",
+  (req, res) => {
+    const query =
+      String(
+        req.query.q || ""
+      )
+        .trim()
+        .toLowerCase();
 
-  if (!query) {
-    return res.status(400).json({
-      success: false,
-      message:
-        "مهرباني وکړئ q ورکړئ",
+    if (!query) {
+      return res.status(400).json({
+        success: false,
+        message:
+          "مهرباني وکړئ q ورکړئ",
+      });
+    }
+
+    const result =
+      lessons.filter(
+        (lesson) =>
+          lesson.text
+            .toLowerCase()
+            .includes(query) ||
+          lesson.title
+            .toLowerCase()
+            .includes(query)
+      );
+
+    res.json({
+      success: true,
+      query,
+      total:
+        result.length,
+      lessons:
+        result,
     });
   }
-
-  const result =
-    lessons.filter(
-      (lesson) =>
-        lesson.text
-          .toLowerCase()
-          .includes(query) ||
-        lesson.title
-          .toLowerCase()
-          .includes(query)
-    );
-
-  res.json({
-    success: true,
-    query,
-    total: result.length,
-    lessons: result,
-  });
-});
+);
 
 // ======================================================
 // 404
 // ======================================================
 
-app.use((req, res) => {
-  res.status(404).json({
-    success: false,
-    message: "API endpoint ونه موندل شو",
-    path: req.originalUrl,
-  });
-});
+app.use(
+  (req, res) => {
+    res.status(404).json({
+      success: false,
+      message:
+        "API endpoint ونه موندل شو",
+      path:
+        req.originalUrl,
+    });
+  }
+);
 
 // ======================================================
 // ERROR HANDLER
 // ======================================================
 
 app.use(
-  (err, req, res, next) => {
+  (
+    err,
+    req,
+    res,
+    next
+  ) => {
     console.error(err);
 
     res.status(500).json({
       success: false,
-      message: "Server error",
-      error: err.message,
+      message:
+        "Server error",
+      error:
+        err.message,
     });
   }
 );
@@ -2052,32 +2198,39 @@ app.use(
 const PORT =
   process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(
-    "=========================================="
-  );
+app.listen(
+  PORT,
+  () => {
+    console.log(
+      "=========================================="
+    );
 
-  console.log(
-    "Pashto Typing API is running"
-  );
+    console.log(
+      "Pashto Typing API is running"
+    );
 
-  console.log(
-    `http://localhost:${PORT}`
-  );
+    console.log(
+      `http://localhost:${PORT}`
+    );
 
-  console.log(
-    `Total Lessons: ${lessons.length}`
-  );
+    console.log(
+      `Total Lessons: ${lessons.length}`
+    );
 
-  console.log(
-    `Total Levels: ${totalLevels}`
-  );
+    console.log(
+      `Total Levels: ${totalLevels}`
+    );
 
-  console.log(
-    "Home Row Lessons: 100"
-  );
+    console.log(
+      "First Step: F = ب | J = ت"
+    );
 
-  console.log(
-    "=========================================="
-  );
-});
+    console.log(
+      "Home Row Lessons: 100"
+    );
+
+    console.log(
+      "=========================================="
+    );
+  }
+);
