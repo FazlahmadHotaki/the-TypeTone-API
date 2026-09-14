@@ -1,50 +1,48 @@
 [
   {
-    "id": 1,
-    "step": 1,
-    "type": "letter",
-    "title": "د F او J تڼیو تمرین 1",
-    "text": "ب ب ب ب ت ت ت ت ب ب ب ب ت ت ت ت ب ب ت ت ب ت ب ت ب ت ب ت ت ب ت ب ت ب ",
-    "difficulty": "easy",
-    "language": "ps",
-    "characterCount": 99,
-    "wordCount": 50
-  },
-  
-  {
-  
-    "id": 2,
-    "step": 1,
-    "type": "letter",
-    "title": "د F او J تڼیو تمرین 2",
-    "text": "ب ب ت ت بب بب تت تت بت بت تب تب بب تت",
-    "difficulty": "easy",
-    "language": "ps",
-    "characterCount": 99,
-    "wordCount": 50
-  },
-  {
-    "id": 3,
-    "step": 1,
-    "type": "letter",
-    "title": "د F او J تڼیو تمرین 3",
-    "text": "بب تتتبت بتببت تتبت بتت تببتب بب تتبتت ببتبب بتت تتبتت بب بتبببت تببتتبب تت تبببب تب تت",
-    "difficulty": "easy",
-    "language": "ps",
-    "characterCount": 99,
-    "wordCount": 50
-  },
-  {
-    "id": 4,
-    "step": 1,
-    "type": "letter",
-    "title": "د F او J تڼیو تمرین 4",
-    "text": "ی ی ی ی ن ن ن ن یی نن ین نی ی ی ن ن نی نی ین ین",
-    "difficulty": "easy",
-    "language": "ps",
-    "characterCount": 99,
-    "wordCount": 50
-  },
+  "id": 1,
+  "step": ۱,
+  "type": "letter",
+  "title": "د ب او ت تڼیو تمرین ۱",
+  "text": "ب ب ب ب ت ت ت ت ب ب ب ب ت ت ت ت ب ب ت ت ب ت ب ت ب ت ب ت ت ب ت ب ت ب ",
+  "difficulty": "easy",
+  "language": "ps",
+  "characterCount": 99,
+  "wordCount": 50
+},
+{
+  "id": 2,
+  "step": ۱,
+  "type": "letter",
+  "title": "د ب او ت تڼیو تمرین ۲",
+  "text": "ب ب ت ت بب بب تت تت بت بت تب تب بب تت",
+  "difficulty": "easy",
+  "language": "ps",
+  "characterCount": 99,
+  "wordCount": 50
+},
+{
+  "id": 3,
+  "step": ۱,
+  "type": "letter",
+  "title": "د ب او ت تڼیو تمرین ۳",
+  "text": "بب تتتبت بتببت تتبت بتت تببتب بب تتبتت ببتبب بتت تتبتت بب بتبببت تببتتبب تت تبببب تب تت",
+  "difficulty": "easy",
+  "language": "ps",
+  "characterCount": 99,
+  "wordCount": 50
+},
+{
+  "id": 4,
+  "step": ۱,
+  "type": "letter",
+  "title": "د ی او ن تڼیو تمرین ۱",
+  "text": "ی ی ی ی ن ن ن ن یی نن ین نی ی ی ن ن نی نی ین ین",
+  "difficulty": "easy",
+  "language": "ps",
+  "characterCount": 99,
+  "wordCount": 50
+},
   {
     "id": 5,
     "step": 1,
