@@ -268,7 +268,7 @@ const paragraphs = [
 ];
 
 // ======================================================
-// LONG TEXTS - LEVEL 16
+// LONG TEXTS - STEP 16
 // ======================================================
 
 const longTexts = [
@@ -291,7 +291,7 @@ const longTexts = [
 ];
 
 // ======================================================
-// STORIES - LEVEL 17
+// STORIES - STEP 17
 // ======================================================
 
 const stories = [
@@ -307,7 +307,7 @@ const stories = [
 ];
 
 // ======================================================
-// EDUCATIONAL TEXTS - LEVEL 18
+// EDUCATIONAL TEXTS - STEP 18
 // ======================================================
 
 const educationalTexts = [
@@ -417,10 +417,6 @@ const keyboardRows = {
 // ======================================================
 // FIRST STEP - F + J
 // ======================================================
-
-// F = ب
-// J = ت
-// The first step trains both hands.
 
 const firstStepKeys = ["ب", "ت"];
 
@@ -586,7 +582,7 @@ function randomItem(array) {
 
 function createLesson(
   id,
-  level,
+  step,
   type,
   title,
   text,
@@ -594,7 +590,7 @@ function createLesson(
 ) {
   return {
     id,
-    level,
+    step,
     type,
     title,
     text,
@@ -615,18 +611,10 @@ const lessons = [];
 let id = 1;
 
 // ======================================================
-// LEVEL 1
+// STEP 1
 // FIRST STEP - F + J
 // BOTH HANDS
 // ======================================================
-
-// F = ب
-// J = ت
-//
-// Lesson 1: ب ت ب ت ب ت...
-// Lesson 2: ت ب ت ب ت ب...
-// Lesson 3: ب ت ب ت ب ت...
-// Lesson 4: ت ب ت ب ت ب...
 
 for (let i = 0; i < 20; i++) {
   const firstKey =
@@ -655,7 +643,7 @@ for (let i = 0; i < 20; i++) {
 }
 
 // ======================================================
-// LEVEL 2
+// STEP 2
 // TWO LETTER COMBINATIONS
 // 50 LESSONS
 // ======================================================
@@ -689,7 +677,7 @@ for (let i = 0; i < 50; i++) {
 }
 
 // ======================================================
-// LEVEL 3
+// STEP 3
 // WORDS
 // 50 LESSONS
 // ======================================================
@@ -721,7 +709,7 @@ for (let i = 0; i < 50; i++) {
 }
 
 // ======================================================
-// LEVEL 4
+// STEP 4
 // PHRASES
 // 50 LESSONS
 // ======================================================
@@ -753,9 +741,9 @@ for (let i = 0; i < 50; i++) {
 }
 
 // ======================================================
-// LEVEL 5
+// STEP 5
 // KEYBOARD ROW PRACTICE
-// ORIGINAL 50 LESSONS
+// ORIGINAL 50 + 100 HOME ROW LESSONS
 // ======================================================
 
 for (let i = 0; i < 50; i++) {
@@ -805,11 +793,7 @@ for (let i = 0; i < 50; i++) {
 // 100 LESSONS
 // ======================================================
 
-// ------------------------------------------------------
-// HOME ROW LESSON 1-20
-// SINGLE LETTER FOCUS
-// ------------------------------------------------------
-
+// HOME ROW 1-20
 for (let i = 0; i < 20; i++) {
   const letter =
     homeRowLetters[
@@ -833,11 +817,7 @@ for (let i = 0; i < 20; i++) {
   );
 }
 
-// ------------------------------------------------------
-// HOME ROW LESSON 21-40
-// TWO LETTER COMBINATIONS
-// ------------------------------------------------------
-
+// HOME ROW 21-40
 for (let i = 0; i < 20; i++) {
   const combination =
     homeRowCombinations[
@@ -861,11 +841,7 @@ for (let i = 0; i < 20; i++) {
   );
 }
 
-// ------------------------------------------------------
-// HOME ROW LESSON 41-55
-// THREE LETTER COMBINATIONS
-// ------------------------------------------------------
-
+// HOME ROW 41-55
 for (let i = 0; i < 15; i++) {
   const a =
     homeRowLetters[
@@ -884,8 +860,7 @@ for (let i = 0; i < 15; i++) {
         homeRowLetters.length
     ];
 
-  const combination =
-    a + b + c;
+  const combination = a + b + c;
 
   const text = repeatText(
     combination,
@@ -904,11 +879,7 @@ for (let i = 0; i < 15; i++) {
   );
 }
 
-// ------------------------------------------------------
-// HOME ROW LESSON 56-65
-// LEFT HAND
-// ------------------------------------------------------
-
+// HOME ROW 56-65
 for (let i = 0; i < 10; i++) {
   const selected = [];
 
@@ -938,11 +909,7 @@ for (let i = 0; i < 10; i++) {
   );
 }
 
-// ------------------------------------------------------
-// HOME ROW LESSON 66-75
-// RIGHT HAND
-// ------------------------------------------------------
-
+// HOME ROW 66-75
 for (let i = 0; i < 10; i++) {
   const selected = [];
 
@@ -972,11 +939,7 @@ for (let i = 0; i < 10; i++) {
   );
 }
 
-// ------------------------------------------------------
-// HOME ROW LESSON 76-85
-// LEFT + RIGHT HAND
-// ------------------------------------------------------
-
+// HOME ROW 76-85
 for (let i = 0; i < 10; i++) {
   const selected = [];
 
@@ -993,9 +956,7 @@ for (let i = 0; i < 10; i++) {
           homeRowRight.length
       ];
 
-    selected.push(
-      left + right
-    );
+    selected.push(left + right);
   }
 
   const text = repeatText(
@@ -1015,11 +976,7 @@ for (let i = 0; i < 10; i++) {
   );
 }
 
-// ------------------------------------------------------
-// HOME ROW LESSON 86-95
-// WORD PRACTICE
-// ------------------------------------------------------
-
+// HOME ROW 86-95
 for (let i = 0; i < 10; i++) {
   const selected = [];
 
@@ -1049,11 +1006,7 @@ for (let i = 0; i < 10; i++) {
   );
 }
 
-// ------------------------------------------------------
-// HOME ROW LESSON 96-100
-// PHRASES + SENTENCES
-// ------------------------------------------------------
-
+// HOME ROW 96-100
 for (let i = 0; i < 5; i++) {
   const phrase =
     homeRowPhrases[
@@ -1083,7 +1036,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 // ======================================================
-// LEVEL 6
+// STEP 6
 // SENTENCES
 // 50 LESSONS
 // ======================================================
@@ -1115,7 +1068,7 @@ for (let i = 0; i < 50; i++) {
 }
 
 // ======================================================
-// LEVEL 7
+// STEP 7
 // LONG SENTENCES
 // 60 LESSONS
 // ======================================================
@@ -1145,7 +1098,7 @@ for (let i = 0; i < 60; i++) {
 }
 
 // ======================================================
-// LEVEL 8
+// STEP 8
 // MIXED WORDS
 // 40 LESSONS
 // ======================================================
@@ -1156,7 +1109,8 @@ for (let i = 0; i < 40; i++) {
   for (let j = 0; j < 15; j++) {
     selected.push(
       easyWords[
-        (i + j) % easyWords.length
+        (i + j) %
+          easyWords.length
       ]
     );
   }
@@ -1174,7 +1128,7 @@ for (let i = 0; i < 40; i++) {
 }
 
 // ======================================================
-// LEVEL 9
+// STEP 9
 // MIXED PHRASES
 // 40 LESSONS
 // ======================================================
@@ -1185,7 +1139,8 @@ for (let i = 0; i < 40; i++) {
   for (let j = 0; j < 8; j++) {
     selected.push(
       phrases[
-        (i + j) % phrases.length
+        (i + j) %
+          phrases.length
       ]
     );
   }
@@ -1203,7 +1158,7 @@ for (let i = 0; i < 40; i++) {
 }
 
 // ======================================================
-// LEVEL 10
+// STEP 10
 // MIXED SENTENCES
 // 40 LESSONS
 // ======================================================
@@ -1214,7 +1169,8 @@ for (let i = 0; i < 40; i++) {
   for (let j = 0; j < 6; j++) {
     selected.push(
       sentences[
-        (i + j) % sentences.length
+        (i + j) %
+          sentences.length
       ]
     );
   }
@@ -1232,7 +1188,7 @@ for (let i = 0; i < 40; i++) {
 }
 
 // ======================================================
-// LEVEL 11
+// STEP 11
 // LONG TEXT
 // 40 LESSONS
 // ======================================================
@@ -1260,7 +1216,7 @@ for (let i = 0; i < 40; i++) {
 }
 
 // ======================================================
-// LEVEL 12
+// STEP 12
 // PARAGRAPHS
 // 30 LESSONS
 // ======================================================
@@ -1284,7 +1240,7 @@ for (let i = 0; i < 30; i++) {
 }
 
 // ======================================================
-// LEVEL 13
+// STEP 13
 // MIXED PARAGRAPHS
 // 30 LESSONS
 // ======================================================
@@ -1312,7 +1268,7 @@ for (let i = 0; i < 30; i++) {
 }
 
 // ======================================================
-// LEVEL 14
+// STEP 14
 // ADVANCED TYPING
 // 30 LESSONS
 // ======================================================
@@ -1342,7 +1298,7 @@ for (let i = 0; i < 30; i++) {
 }
 
 // ======================================================
-// LEVEL 15
+// STEP 15
 // FINAL TEST
 // 30 LESSONS
 // ======================================================
@@ -1374,7 +1330,7 @@ for (let i = 0; i < 30; i++) {
 }
 
 // ======================================================
-// LEVEL 16
+// STEP 16
 // 50 LONG TEXT LESSONS
 // ======================================================
 
@@ -1397,7 +1353,7 @@ for (let i = 0; i < 50; i++) {
 }
 
 // ======================================================
-// LEVEL 17
+// STEP 17
 // 50 STORY LESSONS
 // ======================================================
 
@@ -1420,7 +1376,7 @@ for (let i = 0; i < 50; i++) {
 }
 
 // ======================================================
-// LEVEL 18
+// STEP 18
 // 50 EDUCATIONAL LESSONS
 // ======================================================
 
@@ -1443,7 +1399,7 @@ for (let i = 0; i < 50; i++) {
 }
 
 // ======================================================
-// LEVEL 19
+// STEP 19
 // 50 MIXED-LONG LESSONS
 // ======================================================
 
@@ -1487,7 +1443,7 @@ for (let i = 0; i < 50; i++) {
 }
 
 // ======================================================
-// LEVEL 20
+// STEP 20
 // 50 FINAL LONG TESTS
 // ======================================================
 
@@ -1526,7 +1482,7 @@ for (let i = 0; i < 50; i++) {
 }
 
 // ======================================================
-// LEVEL 21
+// STEP 21
 // 20 VERY LONG TEXT LESSONS
 // ======================================================
 
@@ -1561,7 +1517,35 @@ for (let i = 0; i < 20; i++) {
 // ======================================================
 
 const totalLessons = lessons.length;
-const totalLevels = 21;
+const totalSteps = 21;
+
+// ======================================================
+// STEP NAMES
+// ======================================================
+
+const stepNames = {
+  1: "F + J First Step",
+  2: "Two Letter Combinations",
+  3: "Words",
+  4: "Phrases",
+  5: "Keyboard Rows + 100 Home Row Lessons",
+  6: "Sentences",
+  7: "Long Sentences",
+  8: "Mixed Words",
+  9: "Mixed Phrases",
+  10: "Mixed Sentences",
+  11: "Long Text",
+  12: "Paragraphs",
+  13: "Mixed Paragraphs",
+  14: "Advanced Typing",
+  15: "Final Test",
+  16: "Long Text",
+  17: "Stories",
+  18: "Educational Text",
+  19: "Mixed Long",
+  20: "Final Long Test",
+  21: "Very Long Text",
+};
 
 // ======================================================
 // HOME
@@ -1570,45 +1554,55 @@ const totalLevels = 21;
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "Pashto Typing Learning API",
+
+    message:
+      "Pashto Typing Learning API",
+
     language: "Pashto",
+
     totalLessons,
-    totalLevels,
+
+    totalSteps,
+
     homeRowLessons: 100,
 
-    levels: {
-      1: "F + J First Step",
-      2: "Two Letter Combinations",
-      3: "Words",
-      4: "Phrases",
-      5: "Keyboard Rows + 100 Home Row Lessons",
-      6: "Sentences",
-      7: "Long Sentences",
-      8: "Mixed Words",
-      9: "Mixed Phrases",
-      10: "Mixed Sentences",
-      11: "Long Text",
-      12: "Paragraphs",
-      13: "Mixed Paragraphs",
-      14: "Advanced Typing",
-      15: "Final Test",
-      16: "Long Text",
-      17: "Stories",
-      18: "Educational Text",
-      19: "Mixed Long",
-      20: "Final Long Test",
-      21: "Very Long Text",
-    },
+    steps: stepNames,
 
     endpoints: {
       keyboard: "/api/keyboard",
       letters: "/api/letters",
+      randomLetter: "/api/letters/random",
+
       lessons: "/api/lessons",
       randomLesson: "/api/lessons/random",
-      levels: "/api/levels",
+
+      steps: "/api/steps",
+
+      stepLessons:
+        "/api/lessons/step/:step",
+
+      randomStepLesson:
+        "/api/lessons/random/step/:step",
+
+      lessonById:
+        "/api/lessons/:id",
+
+      lessonTypes:
+        "/api/lessons/type/:type",
+
+      difficulty:
+        "/api/lessons/difficulty/:difficulty",
+
       stats: "/api/stats",
-      coverage: "/api/coverage",
-      homeRow: "/api/lessons/home-row",
+
+      coverage:
+        "/api/coverage",
+
+      search:
+        "/api/search",
+
+      homeRow:
+        "/api/lessons/home-row",
     },
   });
 });
@@ -1620,7 +1614,9 @@ app.get("/", (req, res) => {
 app.get("/api/keyboard", (req, res) => {
   res.json({
     success: true,
+
     keyboard: pashtoKeyboard,
+
     rows: keyboardRows,
 
     firstStep: {
@@ -1642,8 +1638,7 @@ app.get("/api/keyboard", (req, res) => {
       totalLetters:
         homeRowLetters.length,
 
-      letters:
-        homeRowLetters,
+      letters: homeRowLetters,
 
       leftHand:
         homeRowLeft,
@@ -1655,6 +1650,7 @@ app.get("/api/keyboard", (req, res) => {
     },
 
     numbers: pashtoNumbers,
+
     symbols,
   });
 });
@@ -1666,8 +1662,12 @@ app.get("/api/keyboard", (req, res) => {
 app.get("/api/letters", (req, res) => {
   res.json({
     success: true,
-    total: pashtoLetters.length,
-    letters: pashtoLetters,
+
+    total:
+      pashtoLetters.length,
+
+    letters:
+      pashtoLetters,
   });
 });
 
@@ -1679,7 +1679,9 @@ app.get(
   "/api/letters/random",
   (req, res) => {
     const letter =
-      randomItem(pashtoLetters);
+      randomItem(
+        pashtoLetters
+      );
 
     res.json({
       success: true,
@@ -1699,7 +1701,9 @@ app.get(
       req.params.letter;
 
     const index =
-      pashtoLetters.indexOf(letter);
+      pashtoLetters.indexOf(
+        letter
+      );
 
     if (index === -1) {
       return res.status(404).json({
@@ -1711,7 +1715,9 @@ app.get(
 
     res.json({
       success: true,
+
       letter,
+
       index,
 
       lesson:
@@ -1733,7 +1739,12 @@ app.get(
   (req, res) => {
     res.json({
       success: true,
-      total: lessons.length,
+
+      total:
+        lessons.length,
+
+      totalSteps,
+
       lessons,
     });
   }
@@ -1757,73 +1768,90 @@ app.get(
 );
 
 // ======================================================
-// RANDOM LESSON BY LEVEL
+// RANDOM LESSON BY STEP
 // ======================================================
 
 app.get(
-  "/api/lessons/random/:level",
+  "/api/lessons/random/step/:step",
   (req, res) => {
-    const level =
-      Number(req.params.level);
+    const step =
+      Number(req.params.step);
 
-    const levelLessons =
+    const stepLessons =
       lessons.filter(
         (lesson) =>
-          lesson.level === level
+          lesson.step === step
       );
 
     if (
-      levelLessons.length === 0
+      stepLessons.length === 0
     ) {
       return res.status(404).json({
         success: false,
+
         message:
-          "دا level ونه موندل شو",
+          "دا Step ونه موندل شو",
       });
     }
 
     res.json({
       success: true,
-      level,
+
+      step,
+
+      stepName:
+        stepNames[step] ||
+        `Step ${step}`,
+
       lesson:
-        randomItem(levelLessons),
+        randomItem(
+          stepLessons
+        ),
     });
   }
 );
 
 // ======================================================
-// LEVEL LESSONS
+// STEP LESSONS
 // ======================================================
 
 app.get(
-  "/api/lessons/level/:level",
+  "/api/lessons/step/:step",
   (req, res) => {
-    const level =
-      Number(req.params.level);
+    const step =
+      Number(req.params.step);
 
-    const levelLessons =
+    const stepLessons =
       lessons.filter(
         (lesson) =>
-          lesson.level === level
+          lesson.step === step
       );
 
     if (
-      levelLessons.length === 0
+      stepLessons.length === 0
     ) {
       return res.status(404).json({
         success: false,
+
         message:
-          "دا level ونه موندل شو",
+          "دا Step ونه موندل شو",
       });
     }
 
     res.json({
       success: true,
-      level,
+
+      step,
+
+      stepName:
+        stepNames[step] ||
+        `Step ${step}`,
+
       total:
-        levelLessons.length,
+        stepLessons.length,
+
       lessons:
-        levelLessons,
+        stepLessons,
     });
   }
 );
@@ -1838,6 +1866,7 @@ app.get(
     const homeLessons =
       lessons.filter(
         (lesson) =>
+          lesson.step === 5 &&
           lesson.type.startsWith(
             "home-row-"
           )
@@ -1845,7 +1874,9 @@ app.get(
 
     res.json({
       success: true,
-      level: 5,
+
+      step: 5,
+
       total:
         homeLessons.length,
 
@@ -1888,6 +1919,7 @@ app.get(
     ) {
       return res.status(404).json({
         success: false,
+
         message:
           "د دې type لپاره lesson ونه موندل شو",
       });
@@ -1895,9 +1927,12 @@ app.get(
 
     res.json({
       success: true,
+
       type,
+
       total:
         typeLessons.length,
+
       lessons:
         typeLessons,
     });
@@ -1923,6 +1958,7 @@ app.get(
     if (!lesson) {
       return res.status(404).json({
         success: false,
+
         message:
           "Lesson ونه موندل شو",
       });
@@ -1930,40 +1966,45 @@ app.get(
 
     res.json({
       success: true,
+
       lesson,
     });
   }
 );
 
 // ======================================================
-// LEVELS
+// STEPS
 // ======================================================
 
 app.get(
-  "/api/levels",
+  "/api/steps",
   (req, res) => {
-    const levels = [];
+    const steps = [];
 
     for (
-      let level = 1;
-      level <= totalLevels;
-      level++
+      let step = 1;
+      step <= totalSteps;
+      step++
     ) {
-      const levelLessons =
+      const stepLessons =
         lessons.filter(
           (lesson) =>
-            lesson.level === level
+            lesson.step === step
         );
 
-      levels.push({
-        level,
+      steps.push({
+        step,
+
+        name:
+          stepNames[step] ||
+          `Step ${step}`,
 
         totalLessons:
-          levelLessons.length,
+          stepLessons.length,
 
         types: [
           ...new Set(
-            levelLessons.map(
+            stepLessons.map(
               (lesson) =>
                 lesson.type
             )
@@ -1974,8 +2015,10 @@ app.get(
 
     res.json({
       success: true,
-      totalLevels,
-      levels,
+
+      totalSteps,
+
+      steps,
     });
   }
 );
@@ -1990,24 +2033,28 @@ app.get(
     const statistics = [];
 
     for (
-      let level = 1;
-      level <= totalLevels;
-      level++
+      let step = 1;
+      step <= totalSteps;
+      step++
     ) {
-      const levelLessons =
+      const stepLessons =
         lessons.filter(
           (lesson) =>
-            lesson.level === level
+            lesson.step === step
         );
 
       statistics.push({
-        level,
+        step,
+
+        name:
+          stepNames[step] ||
+          `Step ${step}`,
 
         lessons:
-          levelLessons.length,
+          stepLessons.length,
 
         characters:
-          levelLessons.reduce(
+          stepLessons.reduce(
             (total, lesson) =>
               total +
               lesson.characterCount,
@@ -2015,7 +2062,7 @@ app.get(
           ),
 
         words:
-          levelLessons.reduce(
+          stepLessons.reduce(
             (total, lesson) =>
               total +
               lesson.wordCount,
@@ -2026,8 +2073,11 @@ app.get(
 
     res.json({
       success: true,
+
       totalLessons,
-      totalLevels,
+
+      totalSteps,
+
       statistics,
     });
   }
@@ -2053,7 +2103,9 @@ app.get(
 
           return {
             letter,
-            lessons: count,
+
+            lessons:
+              count,
           };
         }
       );
@@ -2092,6 +2144,7 @@ app.get(
     ) {
       return res.status(404).json({
         success: false,
+
         message:
           "د دې difficulty لپاره lesson ونه موندل شو",
       });
@@ -2099,9 +2152,12 @@ app.get(
 
     res.json({
       success: true,
+
       difficulty,
+
       total:
         result.length,
+
       lessons:
         result,
     });
@@ -2125,6 +2181,7 @@ app.get(
     if (!query) {
       return res.status(400).json({
         success: false,
+
         message:
           "مهرباني وکړئ q ورکړئ",
       });
@@ -2143,9 +2200,12 @@ app.get(
 
     res.json({
       success: true,
+
       query,
+
       total:
         result.length,
+
       lessons:
         result,
     });
@@ -2160,8 +2220,10 @@ app.use(
   (req, res) => {
     res.status(404).json({
       success: false,
+
       message:
         "API endpoint ونه موندل شو",
+
       path:
         req.originalUrl,
     });
@@ -2183,8 +2245,10 @@ app.use(
 
     res.status(500).json({
       success: false,
+
       message:
         "Server error",
+
       error:
         err.message,
     });
@@ -2218,15 +2282,15 @@ app.listen(
     );
 
     console.log(
-      `Total Levels: ${totalLevels}`
+      `Total Steps: ${totalSteps}`
     );
 
     console.log(
-      "First Step: F = ب | J = ت"
+      "Step 1: F = ب | J = ت"
     );
 
     console.log(
-      "Home Row Lessons: 100"
+      "Step 5 Home Row Lessons: 100"
     );
 
     console.log(
