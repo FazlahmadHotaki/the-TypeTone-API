@@ -1098,5 +1098,128 @@
     "language": "ps",
     "characterCount": 150,
     "wordCount": 36
-  }
+  },
+  {
+  "id": 100,
+  "step": "۱۰۰",
+  "type": "توری",
+  "title": "د ل او ا تڼیو تمرین ۱",
+  "text": "لا لا ال ال لا لا ال ال لا لا ال ال لا لا ال ال لا لا ال ال",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 59,
+  "wordCount": 20
+},
+{
+  "id": 101,
+  "step": "۱۰۱",
+  "type": "توری",
+  "title": "د ل او ا تڼیو تمرین ۲",
+  "text": "ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 63,
+  "wordCount": 16
+},
+{
+  "id": 102,
+  "step": "۱۰۲",
+  "type": "توری",
+  "title": "د ل او ا تڼیو تمرین ۳",
+  "text": "لال الا للا اال لال الا للا اال لال الا للا اال لال الا للا",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 59,
+  "wordCount": 15
+},
+{
+  "id": 103,
+  "step": "۱۰۳",
+  "type": "توری",
+  "title": "د ل او ا تڼیو تمرین ۴",
+  "text": "للا اال لال الا للا اال لال الا للا اال لال الا للا اال لال الا",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 59,
+  "wordCount": 30
+},
+{
+  "id": 104,
+  "step": "۱۰۴",
+  "type": "توری",
+  "title": "د ل او ا تڼیو تمرین ۵",
+  "text": "ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا ل ا",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 59,
+  "wordCount": 30
+},
+{
+  "id": 105,
+  "step": "۱۰۵",
+  "type": "توری",
+  "title": "د ل او ا او ب او ت تڼیو تمرین ۱",
+  "text": "لا بت ال تب لا بت ال تب لا بت ال تب لا بت ال تب لا بت ال تب",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 59,
+  "wordCount": 20
+},
+{
+  "id": 106,
+  "step": "۱۰۶",
+  "type": "توری",
+  "title": "د ل او ا او ب او ت تڼیو تمرین ۲",
+  "text": "ال بت لا تب ال بت لا تب ال بت لا تب ال بت لا تب ال بت لا تب",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 59,
+  "wordCount": 20
+},
+{
+  "id": 107,
+  "step": "۱۰۷",
+  "type": "توری",
+  "title": "د ل او ا او ی او ن تڼیو تمرین ۳",
+  "text": "لا ین ال نی لا ین ال نی لا ین ال نی لا ین ال نی لا ین ال نی",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 59,
+  "wordCount": 20
+},
+{
+  "id": 108,
+  "step": "۱۰۸",
+  "type": "توری",
+  "title": "د ل او ا او س او م تڼیو تمرین ۴",
+  "text": "لا سم ال مس لا سم ال مس لا سم ال مس لا سم ال مس لا سم ال مس",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 59,
+  "wordCount": 20
+},
+{
+  "id": 109,
+  "step": "۱۰۹",
+  "type": "توری",
+  "title": "د ل او ا او ش او ک تڼیو تمرین ۵",
+  "text": "لا شک ال کش لا شک ال کش لا شک ال کش لا شک ال کش لا شک ال کش",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 59,
+  "wordCount": 20
+},
+{
+  "id": 110,
+  "step": "۱۱۰",
+  "type": "توری",
+  "title": "د ل او ا او ټولو پخوانیو تڼیو تمرین ۶",
+  "text": "لا بت ال ین لا سم ال شک لا بت ال ین لا سم ال شک لا بت ال ین لا سم ال شک",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 71,
+  "wordCount": 24
+}
+  
+  
 ]
