@@ -4819,6 +4819,171 @@
   "language": "ps",
   "characterCount": 19,
   "wordCount": 6
+},
+{
+  "id": 336,
+  "step": "۳۳۶",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۱",
+  "text": "ئ ې ز ر ذ د ړ و ږ /",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
+},
+{
+  "id": 337,
+  "step": "۳۳۷",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۲",
+  "text": "/ ږ و ړ د ذ ر ز ې ئ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
+},
+{
+  "id": 338,
+  "step": "۳۳۸",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۳",
+  "text": "ئز ېړ ږو /ذ د/ رې زړ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 21,
+  "wordCount": 7
+},
+{
+  "id": 339,
+  "step": "۳۳۹",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۴",
+  "text": "/وړ رذ زې دئ ږړ /",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 7
+},
+{
+  "id": 340,
+  "step": "۳۴۰",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۵",
+  "text": "ئ ې ز / ر ذ د ړ و ږ / ئ ې ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 31,
+  "wordCount": 15
+},
+{
+  "id": 341,
+  "step": "۳۴۱",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۶",
+  "text": "ز ئ ږ ې / و د ړ ذ ر ز ې ئ ږ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 29,
+  "wordCount": 14
+},
+{
+  "id": 342,
+  "step": "۳۴۲",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۷",
+  "text": "ئز / ېړ ږو ذد ړو رې زړ /وئ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 29,
+  "wordCount": 9
+},
+{
+  "id": 343,
+  "step": "۳۴۳",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۸",
+  "text": "ږړ وئ / زې رذ دړ ېز ئو ږر /",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 29,
+  "wordCount": 9
+},
+{
+  "id": 344,
+  "step": "۳۴۴",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۹",
+  "text": "ئ ې ز ر / ذ د ړ و ږ ذ ر ز ې ئ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 33,
+  "wordCount": 16
+},
+{
+  "id": 345,
+  "step": "۳۴۵",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۱۰",
+  "text": "و ږ ړ د ذ ر ز ې ئ / ږ و ړ د ذ ر ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 33,
+  "wordCount": 16
+},
+{
+  "id": 346,
+  "step": "۳۴۶",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۱۱",
+  "text": "ئز ېړ / ږو رذ دئ زړ وئ ړو ېز ږړ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 31,
+  "wordCount": 10
+},
+{
+  "id": 347,
+  "step": "۳۴۷",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۱۲",
+  "text": "ږو ئر زې ړد / ذړ وئ رې زړ ږر /",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 30,
+  "wordCount": 10
+},
+{
+  "id": 348,
+  "step": "۳۴۸",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۱۳",
+  "text": "ئ ې ز ر ذ د ړ و ږ / و ړ د ذ ر ز ې ئ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 35,
+  "wordCount": 17
+},
+{
+  "id": 349,
+  "step": "۳۴۹",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۱۴",
+  "text": "ږ ړ و د ذ ر ز ې ئ / ږ ړ و د ذ ر ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 33,
+  "wordCount": 16
+},
+{
+  "id": 350,
+  "step": "۳۵۰",
+  "type": "توری",
+  "title": "د ئ، ې، ز، ر، ذ، د، ړ، و، ږ او / تمرین ۱۵",
+  "text": "ئ ې ز ر ذ د ړ و ږ / ئز ېړ ږو زړ وئ ړو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 33,
+  "wordCount": 15
 }
 
 
