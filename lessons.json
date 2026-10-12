@@ -2442,9 +2442,350 @@
     "language": "ps",
     "characterCount": 520,
     "wordCount": 95
+  },
+  {
+    "id": 221,
+    "step": "۲۲۱",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۱",
+    "text": "ر د ر د ر د ر د",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 15,
+    "wordCount": 8
+  },
+  {
+    "id": 222,
+    "step": "۲۲۲",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۲",
+    "text": "د ر د ر د ر د ر",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 15,
+    "wordCount": 8
+  },
+  {
+    "id": 223,
+    "step": "۲۲۳",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۳",
+    "text": "رر دد رد در",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 11,
+    "wordCount": 4
+  },
+  {
+    "id": 224,
+    "step": "۲۲۴",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۴",
+    "text": "رد در رر دد",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 11,
+    "wordCount": 4
+  },
+  {
+    "id": 225,
+    "step": "۲۲۵",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۵",
+    "text": "ر د د ر ر د د ر",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 15,
+    "wordCount": 8
+  },
+  {
+    "id": 226,
+    "step": "۲۲۶",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۶",
+    "text": "د د ر ر د د ر ر",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 15,
+    "wordCount": 8
+  },
+  {
+    "id": 227,
+    "step": "۲۲۷",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۷",
+    "text": "رد رد در در",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 11,
+    "wordCount": 4
+  },
+  {
+    "id": 228,
+    "step": "۲۲۸",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۸",
+    "text": "ررد ددر ردد درر",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 15,
+    "wordCount": 4
+  },
+  {
+    "id": 229,
+    "step": "۲۲۹",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۹",
+    "text": "ر د ر د د ر د ر",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 15,
+    "wordCount": 8
+  },
+  {
+    "id": 230,
+    "step": "۲۳۰",
+    "type": "توری",
+    "title": "د ر او د تڼیو تمرین ۱۰",
+    "text": "ررد ددر ردد درر رد در",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 21,
+    "wordCount": 6
+  },
+  {
+    "id": 240,
+    "step": "۲۴۰",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱",
+    "text": "ض ص ث ق ع ه خ ح",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 15,
+    "wordCount": 8
+  },
+  {
+    "id": 241,
+    "step": "۲۴۱",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۲",
+    "text": "ح خ ه ع ق ث ص ض",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 15,
+    "wordCount": 8
+  },
+  {
+    "id": 242,
+    "step": "۲۴۲",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۳",
+    "text": "ضص ثق عه خح ضص ثق",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 17,
+    "wordCount": 6
+  },
+  {
+    "id": 243,
+    "step": "۲۴۳",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۴",
+    "text": "عه خح ضص ثق عه خح",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 17,
+    "wordCount": 6
+  },
+  {
+    "id": 244,
+    "step": "۲۴۴",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۵",
+    "text": "ض ص ث ق ع ه خ ح ض ص",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 19,
+    "wordCount": 10
+  },
+  {
+    "id": 245,
+    "step": "۲۴۵",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۶",
+    "text": "ح خ ه ع ق ث ص ض ح خ",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 19,
+    "wordCount": 10
+  },
+  {
+    "id": 246,
+    "step": "۲۴۶",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۷",
+    "text": "ضصثق عهخح ضصثق عهخح",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 19,
+    "wordCount": 4
+  },
+  {
+    "id": 247,
+    "step": "۲۴۷",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۸",
+    "text": "عهخح ضصثق عهخح ضصثق",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 19,
+    "wordCount": 4
+  },
+  {
+    "id": 248,
+    "step": "۲۴۸",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۹",
+    "text": "ض ص ث ق ع ه خ ح ض ص ث ق",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 23,
+    "wordCount": 12
+  },
+  {
+    "id": 249,
+    "step": "۲۴۹",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۰",
+    "text": "ح خ ه ع ق ث ص ض ح خ ه ع",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 23,
+    "wordCount": 12
+  },
+  {
+    "id": 250,
+    "step": "۲۵۰",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۱",
+    "text": "ضصثقعهخح ضصثقعهخح",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 17,
+    "wordCount": 2
+  },
+  {
+    "id": 251,
+    "step": "۲۵۱",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۲",
+    "text": "حخهعقثصض حخهعقثصض",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 17,
+    "wordCount": 2
+  },
+  {
+    "id": 252,
+    "step": "۲۵۲",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۳",
+    "text": "ض ص ث ق ع ه خ ح ض ص ث ق ع ه خ ح",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 31,
+    "wordCount": 16
+  },
+  {
+    "id": 253,
+    "step": "۲۵۳",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۴",
+    "text": "ح خ ه ع ق ث ص ض ح خ ه ع ق ث ص ض",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 31,
+    "wordCount": 16
+  },
+  {
+    "id": 254,
+    "step": "۲۵۴",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۵",
+    "text": "ضصثقعهخح ضصثقعهخح ضصثقعهخح",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 26,
+    "wordCount": 3
+  },
+  {
+    "id": 255,
+    "step": "۲۵۵",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۶",
+    "text": "حخهعقثصض حخهعقثصض حخهعقثصض",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 26,
+    "wordCount": 3
+  },
+  {
+    "id": 256,
+    "step": "۲۵۶",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۷",
+    "text": "ض ض ص ص ث ث ق ق ع ع ه ه خ خ ح ح",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 31,
+    "wordCount": 16
+  },
+  {
+    "id": 257,
+    "step": "۲۵۷",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۸",
+    "text": "ح ح خ خ ه ه ع ع ق ق ث ث ص ص ض ض",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 31,
+    "wordCount": 16
+  },
+  {
+    "id": 258,
+    "step": "۲۵۸",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۱۹",
+    "text": "ضصثقعهخح ضصثقعهخح ضصثقعهخح ضصثقعهخح",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 35,
+    "wordCount": 4
+  },
+  {
+    "id": 259,
+    "step": "۲۵۹",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۲۰",
+    "text": "حخهعقثصض حخهعقثصض حخهعقثصض حخهعقثصض",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 35,
+    "wordCount": 4
+  },
+  {
+    "id": 260,
+    "step": "۲۶۰",
+    "type": "توری",
+    "title": "د ض ص ث ق ع ه خ ح تڼیو تمرین ۲۱",
+    "text": "ض ص ث ق ع ه خ ح ض ص ث ق ع ه خ ح ض ص ث ق ع ه خ ح",
+    "difficulty": "اسان",
+    "language": "ps",
+    "characterCount": 47,
+    "wordCount": 24
   }
+
 ]
 
 
   
-
