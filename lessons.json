@@ -4104,7 +4104,228 @@
   "language": "ps",
   "characterCount": 48,
   "wordCount": 10
+},
+{
+  "id": 371,
+  "step": "۳۷۱",
+  "type": "کلمې",
+  "title": "د ز او ړ ترکیبي کلمو تمرین ۶",
+  "text": "ړوند ړغیدل ړغون ړغونه زړور زړه زما زلمی زور زیتون زحمت زمان",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 48,
+  "wordCount": 10
+},
+{
+  "id": 372,
+  "step": "۳۷۲",
+  "type": "کلمې",
+  "title": "د ز او ړ ترکیبي کلمو تمرین ۷",
+  "text": "زړه ړوند زما ړانده زلمی ړوندی زور ړغ زیتون ړغول زحمت ړغیدل زمان ړغون زل ړغونه",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 66,
+  "wordCount": 14
+},
+{
+  "id": 373,
+  "step": "۳۷۳",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱",
+  "text": "ې و ې و ې و ې و",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 374,
+  "step": "۳۷۴",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۲",
+  "text": "و ې و ې و ې و ې",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 375,
+  "step": "۳۷۵",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۳",
+  "text": "ېې وو ېې وو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 376,
+  "step": "۳۷۶",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۴",
+  "text": "وو ېې وو ېې",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 377,
+  "step": "۳۷۷",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۵",
+  "text": "ېو وې ېو وې",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 378,
+  "step": "۳۷۸",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۶",
+  "text": "وې ېو وې ېو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 379,
+  "step": "۳۷۹",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۷",
+  "text": "ې ې و و ې ې و و",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 380,
+  "step": "۳۸۰",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۸",
+  "text": "و و ې ې و و ې ې",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 381,
+  "step": "۳۸۱",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۹",
+  "text": "ېوې وېې ېوې وېې",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 4
+},
+{
+  "id": 382,
+  "step": "۳۸۲",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱۰",
+  "text": "وېو ېوو وېو ېوو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 4
+},
+{
+  "id": 383,
+  "step": "۳۸۳",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱۱",
+  "text": "ې ې ې و و و",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 6
+},
+{
+  "id": 384,
+  "step": "۳۸۴",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱۲",
+  "text": "و و و ې ې ې",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 6
+},
+{
+  "id": 385,
+  "step": "۳۸۵",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱۳",
+  "text": "ېو وې ېو وې ېو وې",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 17,
+  "wordCount": 6
+},
+{
+  "id": 386,
+  "step": "۳۸۶",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱۴",
+  "text": "وې ېو وې ېو وې ېو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 17,
+  "wordCount": 6
+},
+{
+  "id": 387,
+  "step": "۳۸۷",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱۵",
+  "text": "ېې ېې وو وو ېې ېې",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 17,
+  "wordCount": 6
+},
+{
+  "id": 388,
+  "step": "۳۸۸",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱۶",
+  "text": "وو وو ېې ېې وو وو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 17,
+  "wordCount": 6
+},
+{
+  "id": 389,
+  "step": "۳۸۹",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱۷",
+  "text": "ېوې وېو ېوې وېو ېوې وېو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 6
+},
+{
+  "id": 390,
+  "step": "۳۹۰",
+  "type": "توری",
+  "title": "د ې او و تڼیو تمرین ۱۸",
+  "text": "وېې ېوو وېې ېوو وېې ېوو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 6
 }
+
 
 ]
 
