@@ -4324,6 +4324,116 @@
   "language": "ps",
   "characterCount": 23,
   "wordCount": 6
+},
+{
+  "id": 391,
+  "step": "۳۹۱",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۱",
+  "text": "و ئ و ئ و ئ و ئ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 392,
+  "step": "۳۹۲",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۲",
+  "text": "ئ و ئ و ئ و ئ و",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 393,
+  "step": "۳۹۳",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۳",
+  "text": "وو ئئ وئ ئو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 394,
+  "step": "۳۹۴",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۴",
+  "text": "ئئ وو ئو وئ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 395,
+  "step": "۳۹۵",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۵",
+  "text": "و ئ ئ و و ئ ئ و",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 396,
+  "step": "۳۹۶",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۶",
+  "text": "ئ ئ و و ئ ئ و و",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 397,
+  "step": "۳۹۷",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۷",
+  "text": "وئ وئ ئو ئو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 398,
+  "step": "۳۹۸",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۸",
+  "text": "ووئ ئئو ئوئ وئو",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 4
+},
+{
+  "id": 399,
+  "step": "۳۹۹",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۹",
+  "text": "و ئ و ئ و ئ و ئ و ئ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
+},
+{
+  "id": 400,
+  "step": "۴۰۰",
+  "type": "توری",
+  "title": "د و او ئ تمرین ۱۰",
+  "text": "ئ و ئ و ئ و ئ و ئ و",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
 }
 
 
