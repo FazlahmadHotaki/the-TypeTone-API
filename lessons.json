@@ -5480,6 +5480,61 @@
   "language": "ps",
   "characterCount": 28,
   "wordCount": 6
+},
+{
+  "id": 496,
+  "step": "۴۹۶",
+  "type": "توری",
+  "title": "د ټ، ڼ، ډ، ء او ژ تورو تمرین ۱",
+  "text": "ټټ ڼڼ ډډ ءء ژژ ټڼ ډژ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 8
+},
+{
+  "id": 497,
+  "step": "۴۹۷",
+  "type": "توری",
+  "title": "د ټ، ڼ، ډ، ء او ژ تورو تمرین ۲",
+  "text": "ڼټ ډډ ژژ ټټ ءء ڼډ ژټ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 8
+},
+{
+  "id": 498,
+  "step": "۴۹۸",
+  "type": "توری",
+  "title": "د ټ، ڼ، ډ، ء او ژ تورو تمرین ۳",
+  "text": "ډډ ټټ ڼڼ ژژ ءء ټډ ڼژ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 8
+},
+{
+  "id": 499,
+  "step": "۴۹۹",
+  "type": "توری",
+  "title": "د ټ، ڼ، ډ، ء او ژ تورو تمرین ۴",
+  "text": "ژژ ءء ټټ ډډ ڼڼ ژډ ټڼ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 8
+},
+{
+  "id": 500,
+  "step": "۵۰۰",
+  "type": "توری",
+  "title": "د ټ، ڼ، ډ، ء او ژ تورو تمرین ۵",
+  "text": "ءء ژژ ڼڼ ټټ ډډ ءژ ټډ",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 8
 }
 
 
