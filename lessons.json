@@ -3212,28 +3212,6 @@
     "language": "ps",
     "characterCount": 11,
     "wordCount": 4
-  },
-  {
-    "id": 300,
-    "step": "۳۰۰",
-    "type": "توری",
-    "title": "د غ او د تڼیو تمرین ۴",
-    "text": "غد دغ غد دغ",
-    "difficulty": "اسان",
-    "language": "ps",
-    "characterCount": 11,
-    "wordCount": 4
-  },
-  {
-    "id": 301,
-    "step": "۳۰۱",
-    "type": "توری",
-    "title": "د غ او د تڼیو تمرین ۵",
-    "text": "غ د د غ غ د د غ",
-    "difficulty": "اسان",
-    "language": "ps",
-    "characterCount": 15,
-    "wordCount": 8
   }
 
 ]
