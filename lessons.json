@@ -5205,6 +5205,116 @@
   "language": "ps",
   "characterCount": 23,
   "wordCount": 8
+},
+{
+  "id": 486,
+  "step": "۴۸۶",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۱",
+  "text": "زما کور ښکلی دی. زه کتاب لولم.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 32,
+  "wordCount": 7
+},
+{
+  "id": 487,
+  "step": "۴۸۷",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۲",
+  "text": "سړی کار کوي. ماشوم ښوونځي ته ځي.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 33,
+  "wordCount": 7
+},
+{
+  "id": 488,
+  "step": "۴۸۸",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۳",
+  "text": "زه پښتو زده کوم. پښتو خوږه ژبه ده.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 35,
+  "wordCount": 7
+},
+{
+  "id": 489,
+  "step": "۴۸۹",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۴",
+  "text": "زما مور چای جوړوي. پلار مې کتاب لولي.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 38,
+  "wordCount": 7
+},
+{
+  "id": 490,
+  "step": "۴۹۰",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۵",
+  "text": "لمر روښانه دی. مرغان په ونو کې دي.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 34,
+  "wordCount": 7
+},
+{
+  "id": 491,
+  "step": "۴۹۱",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۶",
+  "text": "زه له خپل ملګري سره لوبې کوم.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 29,
+  "wordCount": 6
+},
+{
+  "id": 492,
+  "step": "۴۹۲",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۷",
+  "text": "ښه زده کړه روښانه راتلونکی جوړوي.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 33,
+  "wordCount": 5
+},
+{
+  "id": 493,
+  "step": "۴۹۳",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۸",
+  "text": "زموږ ښار ښکلی او لوی دی.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 25,
+  "wordCount": 6
+},
+{
+  "id": 494,
+  "step": "۴۹۴",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۹",
+  "text": "زه هره ورځ پښتو لیکم او لولم.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 30,
+  "wordCount": 7
+},
+{
+  "id": 495,
+  "step": "۴۹۵",
+  "type": "جمله",
+  "title": "د پښتو جملو تمرین ۱۰",
+  "text": "علم د انسان ژوند روښانه کوي.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 28,
+  "wordCount": 6
 }
 
 
