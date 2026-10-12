@@ -4599,6 +4599,226 @@
   "language": "ps",
   "characterCount": 21,
   "wordCount": 6
+},
+{
+  "id": 416,
+  "step": "۴۱۶",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱",
+  "text": ". ز . ز . ز . ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 417,
+  "step": "۴۱۷",
+  "type": "توری",
+  "title": "د . او ز تمرین ۲",
+  "text": "ز . ز . ز . ز .",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 418,
+  "step": "۴۱۸",
+  "type": "توری",
+  "title": "د . او ز تمرین ۳",
+  "text": ".. زز .ز ز.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 419,
+  "step": "۴۱۹",
+  "type": "توری",
+  "title": "د . او ز تمرین ۴",
+  "text": "زز .. ز. .ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 420,
+  "step": "۴۲۰",
+  "type": "توری",
+  "title": "د . او ز تمرین ۵",
+  "text": "ز . . ز ز . . ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 421,
+  "step": "۴۲۱",
+  "type": "توری",
+  "title": "د . او ز تمرین ۶",
+  "text": ". . ز ز . . ز ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 422,
+  "step": "۴۲۲",
+  "type": "توری",
+  "title": "د . او ز تمرین ۷",
+  "text": "ز. ز. .ز .ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 423,
+  "step": "۴۲۳",
+  "type": "توری",
+  "title": "د . او ز تمرین ۸",
+  "text": "زز. ..ز ز.. .زز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 4
+},
+{
+  "id": 424,
+  "step": "۴۲۴",
+  "type": "توری",
+  "title": "د . او ز تمرین ۹",
+  "text": "ز . ز . ز . ز . ز .",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
+},
+{
+  "id": 425,
+  "step": "۴۲۵",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۰",
+  "text": ". ز . ز . ز . ز . ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
+},
+{
+  "id": 426,
+  "step": "۴۲۶",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۱",
+  "text": "ز. .ز ز. .ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 427,
+  "step": "۴۲۷",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۲",
+  "text": ".ز ز. .ز ز.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 11,
+  "wordCount": 4
+},
+{
+  "id": 428,
+  "step": "۴۲۸",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۳",
+  "text": "ز . . ز . ز ز . . ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
+},
+{
+  "id": 429,
+  "step": "۴۲۹",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۴",
+  "text": ". ز ز . ز . . ز ز .",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
+},
+{
+  "id": 430,
+  "step": "۴۳۰",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۵",
+  "text": "زز. ز.. .زز ..ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 4
+},
+{
+  "id": 431,
+  "step": "۴۳۱",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۶",
+  "text": "..ز زز. .ز. ز..",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 4
+},
+{
+  "id": 432,
+  "step": "۴۳۲",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۷",
+  "text": "ز . ز . . ز . ز . ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
+},
+{
+  "id": 433,
+  "step": "۴۳۳",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۸",
+  "text": ". . ز ز . ز . . ز ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 10
+},
+{
+  "id": 434,
+  "step": "۴۳۴",
+  "type": "توری",
+  "title": "د . او ز تمرین ۱۹",
+  "text": "ز. .ز ز. .ز ز. .ز",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 17,
+  "wordCount": 6
+},
+{
+  "id": 435,
+  "step": "۴۳۵",
+  "type": "توری",
+  "title": "د . او ز تمرین ۲۰",
+  "text": ".ز ز. ز.. ..ز .ز ز.",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 19,
+  "wordCount": 6
 }
 
 
