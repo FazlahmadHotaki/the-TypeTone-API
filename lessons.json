@@ -6676,6 +6676,61 @@
   "language": "ps",
   "characterCount": 39,
   "wordCount": 8
+},
+{
+  "id": 606,
+  "step": "۶۰۶",
+  "type": "توري",
+  "title": "د ۲ او ۹ تورو تمرین",
+  "text": "۲ ۹ ۲ ۹ ۹ ۲ ۲ ۹",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 607,
+  "step": "۶۰۷",
+  "type": "توري",
+  "title": "د ۲ او ۹ ترکیب",
+  "text": "۲۹ ۹۲ ۲۹ ۹۲ ۲۲ ۹۹ ۲۹ ۹۲",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 8
+},
+{
+  "id": 608,
+  "step": "۶۰۸",
+  "type": "توري",
+  "title": "د ۲ او ۹ ګډ تمرین",
+  "text": "۲۹۲ ۹۲۹ ۲۲۹ ۹۹۲ ۲۹۹ ۹۲۲",
+  "difficulty": "منځنی",
+  "language": "ps",
+  "characterCount": 29,
+  "wordCount": 6
+},
+{
+  "id": 609,
+  "step": "۶۰۹",
+  "type": "توري",
+  "title": "د ۱، ۰، ۹ او ۲ ترکیب",
+  "text": "۱۰۹۲ ۹۲۱۰ ۲۰۱۹ ۹۰۲۱ ۱۲۹۰ ۲۹۰۱",
+  "difficulty": "منځنی",
+  "language": "ps",
+  "characterCount": 29,
+  "wordCount": 6
+},
+{
+  "id": 610,
+  "step": "۶۱۰",
+  "type": "توري",
+  "title": "د ۱، ۰، ۹ او ۲ ګډ تمرین",
+  "text": "۱۰۹۲ ۲۰۱۹ ۹۰۲۱ ۲۹۱۰ ۱۰۲۹ ۹۲۱۰ ۲۰۱۹ ۹۰۲۱",
+  "difficulty": "منځنی",
+  "language": "ps",
+  "characterCount": 39,
+  "wordCount": 8
 }
 ]
 
