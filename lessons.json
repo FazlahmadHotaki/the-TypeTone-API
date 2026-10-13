@@ -6731,7 +6731,63 @@
   "language": "ps",
   "characterCount": 39,
   "wordCount": 8
-}
+},
+{
+  "id": 611,
+  "step": "۶۱۱",
+  "type": "توري",
+  "title": "د ۳ او ۸ تورو تمرین",
+  "text": "۳ ۸ ۳ ۸ ۸ ۳ ۳ ۸",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 15,
+  "wordCount": 8
+},
+{
+  "id": 612,
+  "step": "۶۱۲",
+  "type": "توري",
+  "title": "د ۳ او ۸ ترکیب",
+  "text": "۳۸ ۸۳ ۳۸ ۸۳ ۳۳ ۸۸ ۳۸ ۸۳",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 8
+},
+{
+  "id": 613,
+  "step": "۶۱۳",
+  "type": "توري",
+  "title": "د ۳ او ۸ ګډ تمرین",
+  "text": "۳۸۳ ۸۳۸ ۳۳۸ ۸۸۳ ۳۸۸ ۸۳۳",
+  "difficulty": "منځنی",
+  "language": "ps",
+  "characterCount": 29,
+  "wordCount": 6
+},
+{
+  "id": 614,
+  "step": "۶۱۴",
+  "type": "توري",
+  "title": "د ۳، ۸ او نورو شمېرو ترکیب",
+  "text": "۳۸۱۰ ۸۳۰۹ ۳۹۲۰ ۸۲۱۹ ۱۰۳۸ ۹۸۲۳",
+  "difficulty": "منځنی",
+  "language": "ps",
+  "characterCount": 29,
+  "wordCount": 6
+},
+{
+  "id": 615,
+  "step": "۶۱۵",
+  "type": "توري",
+  "title": "د ټولو شمېرو ګډ تمرین",
+  "text": "۳۸۱۰ ۸۳۰۹ ۲۹۱۰ ۱۰۲۸ ۹۲۳۸ ۸۱۹۰ ۳۰۲۹ ۹۸۲۱",
+  "difficulty": "منځنی",
+  "language": "ps",
+  "characterCount": 39,
+  "wordCount": 8
+},
+
 ]
 
 
