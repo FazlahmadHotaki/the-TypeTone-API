@@ -6609,7 +6609,74 @@
     "language": "ps",
     "characterCount": 130,
     "wordCount": 25
-  }
+  },
+   },
+  {
+    "id": 600,
+    "step": "۶۰۰",
+    "type": "جمله",
+    "title": "د پښتو جملو تمرین",
+    "text": "پاکې اوبه د ژوند لپاره ډېرې مهمې دي، موږ باید د اوبو سرچینې وساتو، د څښلو اوبه پاکې وساتو او له بې ځایه مصرف څخه ډډه وکړو.",
+    "difficulty": "منځنی",
+    "language": "ps",
+    "characterCount": 130,
+    "wordCount": 25
+  },
+  {
+  "id": 601,
+  "step": "۶۰۱",
+  "type": "توري",
+  "title": "د ۱ او ۰ تورو تمرین",
+  "text": "۱۰ ۰۱ ۱۰ ۰۱ ۰۰ ۱۱ ۱۰ ۰۱",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 23,
+  "wordCount": 8
+},
+{
+  "id": 602,
+  "step": "۶۰۲",
+  "type": "توري",
+  "title": "د ۱ او ۰ تورو ترکیب",
+  "text": "۱۰۰ ۰۱۰ ۱۰۱ ۰۱۱ ۱۱۰ ۰۰۱ ۱۰۱ ۰۱۰",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 31,
+  "wordCount": 8
+},
+{
+  "id": 603,
+  "step": "۶۰۳",
+  "type": "توري",
+  "title": "د ۱ او ۰ د شمېرو تمرین",
+  "text": "۱۰۰۱ ۰۱۰۱ ۱۰۱۰ ۰۱۱۰ ۱۱۰۰ ۰۰۱۱",
+  "difficulty": "اسان",
+  "language": "ps",
+  "characterCount": 29,
+  "wordCount": 6
+},
+{
+  "id": 604,
+  "step": "۶۰۴",
+  "type": "توري",
+  "title": "د شمېرو اوږد ترکیب",
+  "text": "۱۰۱۰۱ ۰۱۰۱۰ ۱۱۰۰۱ ۰۰۱۱۰ ۱۰۱۰۰ ۰۱۰۱۱",
+  "difficulty": "منځنی",
+  "language": "ps",
+  "characterCount": 35,
+  "wordCount": 6
+},
+{
+  "id": 605,
+  "step": "۶۰۵",
+  "type": "توري",
+  "title": "د ۱ او ۰ ګډ تمرین",
+  "text": "۱۰۱۰ ۰۱۰۱ ۱۱۰۰ ۰۰۱۱ ۱۰۱۰ ۰۱۰۱ ۱۰۰۱ ۰۱۱۰",
+  "difficulty": "منځنی",
+  "language": "ps",
+  "characterCount": 39,
+  "wordCount": 8
+}
 ]
 
 
